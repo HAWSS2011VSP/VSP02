@@ -19,7 +19,8 @@ hello(Coordinator, Name, Count) ->
 
 waitForOrder() ->
   receive
-    {setneighbours, {Pidl, Pidr}}
+    {setneighbours, {Pidl, Pidr}} ->
+      
 
 
 gcd(A, 0) ->
