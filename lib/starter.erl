@@ -10,14 +10,14 @@ start(Coordinator, PraktID, TeamID, StarterID) ->
     end.
 
 startGCD(_Coordinator, 0, _, _) ->
-  done;
+  {ok};
 startGCD(Coordinator, PNum, WTime, Term, TeamID, StarterID) ->
   spawn(ggT, start, [Coordinator, WTime, Term, PNum, TeamID, StarterID]).
 
 getValues(_Coordinator, 0) ->
   {error, "Could not get values from server."};
 getValues(Coordinator, X) ->
-  Coordinator ! {self(), getSteeringval},
+  Coordinator ! {self(), getsteeringval},
   receive
     {ok, {PNum, WTime, Term}} ->
       {ok, {PNum, WTime, Term}};
@@ -25,5 +25,6 @@ getValues(Coordinator, X) ->
       io:write("Error: ~s, trying again.~n",[Msg]),
       getValues(Coordinator, X-1)
   after 500 ->
+    io:write("Error: timeout, trying again.~n",[]),
     getValues(Coordinator, X-1)
   end.
