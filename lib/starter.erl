@@ -1,18 +1,24 @@
 -module(starter).
--export([start/1]).
+-export([start/4]).
 
 start(Coordinator, PraktID, TeamID, StarterID) ->
-  case getValues(Coordinator, 10) of
+  net_kernel:start([starter, shortnames]),
+  net_kernel:connect_node(Coordinator),
+  case getValues({coordinator, Coordinator}, 10) of
     {ok, {PNum, WTime, Term}} ->
-      startGCD(Coordinator, utils:mkString("", [PraktID, TeamID, PNum, StarterID]), WTime, Term)
+      io:format("Got steering vals, starting gcd processes. ~n", []),
+      startGCD({coordinator, Coordinator}, PNum, utils:mkString("", [PraktID, TeamID, PNum, StarterID]), WTime, Term);
     {error, Msg} ->
       io:write("Error: ~s~n", [Msg])
     end.
 
-startGCD(_Coordinator, 0, _, _) ->
-  {ok};
-startGCD(Coordinator, PNum, WTime, Term, TeamID, StarterID) ->
-  spawn(ggT, start, [Coordinator, WTime, Term, PNum, TeamID, StarterID]).
+startGCD(_Coordinator, 0, _, _, _) ->
+  io:format("Started all gcd procs, going to sleep.~n", []),
+  sleep();
+startGCD(Coordinator, PNum, Name, WTime, Term) ->
+  io:format("Starting gcd process ~w.~n", [PNum]),
+  spawn(ggT, start, [Coordinator, Name, WTime, Term]),
+  startGCD(Coordinator, PNum-1, Name, WTime, Term).
 
 getValues(_Coordinator, 0) ->
   {error, "Could not get values from server."};
@@ -28,3 +34,10 @@ getValues(Coordinator, X) ->
     io:write("Error: timeout, trying again.~n",[]),
     getValues(Coordinator, X-1)
   end.
+
+sleep() ->
+  receive
+  after 500 ->
+      sleep()
+  end.
+

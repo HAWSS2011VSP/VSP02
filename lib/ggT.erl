@@ -3,13 +3,16 @@
 
 
 start(Coordinator, Name, WTime, Term) ->
+  {_Module, Node} = Coordinator,
+  net_kernel:connect_node(Node),
   hello(Coordinator, Name, 10),
   waitForOrder(Coordinator, WTime, Term, nil, nil, 1).
   
 hello(_,_,0) ->
   {error};
 hello(Coordinator, Name, Count) ->
-  Coordinator ! {hello, {self(), Name}},
+  io:format("GCD proc ~s sending hello to ~w...~n", [Name, Coordinator]),
+  Coordinator ! {hello, {self(), utils:mkString("", [Name, Count])}},
   receive 
     {ok} ->
       {ok};
@@ -25,8 +28,8 @@ waitForOrder(Coordinator, WTime, Term, Pidl, Pidr, Mi) ->
       waitForOrder(Coordinator, WTime, Term, Pidl, Pidr, Value);
     {gcd, {Num}} ->
       NewMi = Mi rem Num,
+      timer:sleep(WTime),
       if
-        timer:sleep(WTime),
         NewMi =/= Mi ->
           report(Coordinator, NewMi),
           waitForOrder(Coordinator, WTime, Term, Pidl, Pidr, NewMi);
