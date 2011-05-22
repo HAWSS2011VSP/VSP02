@@ -11,10 +11,12 @@ start() ->
 
 preInitial(Values) ->
   receive
-    {setvalues, NewValues} ->
+    {PID, setvalues, NewValues} ->
       io:format("Got some values.~n", []),
+      PID ! "Received values.",
       preInitial(NewValues);
-    {setinitial} ->
+    {PID, setinitial} ->
+      PID ! "Setting state to initial.",
       io:format("Initialized.~n", []),
       initial(Values, [])
   end.
@@ -29,9 +31,11 @@ initial({ProcCountFrom, ProcCountTo, WTimeFrom, WTimeTo, Timeout, Ggt}, Procs) -
       io:format("GCD process ~s said hello.~n", [Name]),
       PID ! {ok},
       initial({ProcCountFrom, ProcCountTo, WTimeFrom, WTimeTo, Timeout, Ggt}, [{PID, Name}|Procs]);
-    {setready} ->
+    {PID, setready} ->
+      PID ! "Building ring.",
       io:format("Building ring.~n", []),
       buildRing(Procs),
+      PID ! "Setting state to ready.",
       io:format("Ready for takeoff.~n", []),
       ready(Procs);
     Msg ->
