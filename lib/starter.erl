@@ -17,7 +17,7 @@ startGCD(_Coordinator, 0, _, _, _) ->
   sleep();
 startGCD(Coordinator, PNum, Name, WTime, Term) ->
   io:format("Starting gcd process ~w.~n", [PNum]),
-  spawn(ggT, start, [Coordinator, Name, WTime, Term]),
+  spawn(ggT, start, [Coordinator, utils:mkString("", [Name, PNum]), WTime, Term]),
   startGCD(Coordinator, PNum-1, Name, WTime, Term).
 
 getValues(_Coordinator, 0) ->
