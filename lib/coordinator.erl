@@ -40,7 +40,7 @@ initial({ProcCountFrom, ProcCountTo, WTimeFrom, WTimeTo, Timeout, Ggt}, Procs) -
       PID ! "Starting calculation.",
       timer:sleep(1000),
       startGgt(Procs, Ggt),
-      waitForResult(PID);
+      waitForResult(PID, Procs, Ggt);
     Msg ->
       io:format("Did not understand ~w.~n", [Msg]),
       initial({ProcCountFrom, ProcCountTo, WTimeFrom, WTimeTo, Timeout, Ggt}, Procs)
@@ -84,15 +84,22 @@ startGgt(Procs, Ggt, Counter) ->
   Pid ! {gcd, {Ggt * rand(100, 10000)}},
   startGgt(lists:delete(Pid, Procs), Ggt, Counter-1).
 
-waitForResult(Logger) ->
+waitForResult(Logger, Procs, Ggt) ->
   receive
     {newvalue, {Pid, Name, Mi, Time}} ->
       io:format("[~w] Got new Mi from ~s: ~w~n", [Time, Name, Mi]),
       Logger ! utils:mkString("", ["[", Time, "] Got new Mi from ", Name, ": ", Mi]),
-      waitForResult(Logger);
+      waitForResult(Logger, Procs, Ggt);
     {result, {Pid, Name, Result, Time}} ->
       io:format("[~w] Got result from ~s: ~w~n", [Time, Name, Result]),
-      Logger ! utils:mkString("", ["Got Result: ", Result])
+      Logger ! utils:mkString("", ["Got Result: ", Result]),
+      waitForResult(Logger, Procs, Ggt);
+    {ready, {Name}} ->
+      Logger ! utils:mkString("", [Name, " is ready to take new values."]),
+      waitForResult(Logger, Procs, Ggt);
+    {Pid, setready} ->
+      startGgt(Procs, Ggt),
+      waitForResult(Logger, Procs, Ggt)
   end.
 
 rand(From, From) -> From;

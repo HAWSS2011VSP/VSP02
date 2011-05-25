@@ -6,7 +6,7 @@ start(Coordinator, Name, WTime, Term) ->
   {_Module, Node} = Coordinator,
   net_kernel:connect_node(Node),
   hello(Coordinator, Name, 10),
-  waitForOrder(Coordinator, Name, WTime, Term, nil, nil, 1, 0).
+  waitForNeighbours(Coordinator, Name, WTime, Term, nil, nil, 1, 0).
 
 hello(_,_,0) ->
   {error};
@@ -21,14 +21,19 @@ hello(Coordinator, Name, Count) ->
       hello(Coordinator, Name, Count-1)
   end.
 
-waitForOrder(Coordinator, Name, WTime, Term, Pidl, Pidr, Mi, LastRecv) ->
+waitForNeighbours(Coordinator, Name, WTime, Term, Pidl, Pidr, Mi, LastRecv) ->
+  Coordinator ! {ready, {Name}},
   receive
     {setneighbours, {NewPidl, NewPidr}} ->
       io:format("~s got his neighbours.~n", [Name]),
       waitForOrder(Coordinator, Name, WTime, Term, NewPidl, NewPidr, Mi, LastRecv);
     {setinitial, {Value}} ->
       io:format("~s got initial value: ~w~n", [Name, Value]),
-      waitForOrder(Coordinator, Name, WTime, Term, Pidl, Pidr, Value, LastRecv);
+      waitForOrder(Coordinator, Name, WTime, Term, Pidl, Pidr, Value, LastRecv)
+  end.
+
+waitForOrder(Coordinator, Name, WTime, Term, Pidl, Pidr, Mi, LastRecv) ->
+  receive
     {gcd, {Num}} ->
       io:format("~s calculating gcd.~n", [Name]),
       NewMi = Mi rem Num,
@@ -62,7 +67,7 @@ waitForOrder(Coordinator, Name, WTime, Term, Pidl, Pidr, Mi, LastRecv) ->
     if 
       ShouldTerminate ->
         Coordinator ! {result, {self(), Name, Mi, currentTimeInSillyFormat()}},
-        waitForOrder(Coordinator, Name, WTime, Term, Pidl, Pidr, Mi, utils:nowTimestamp());
+        waitForNeighbours(Coordinator, Name, WTime, Term, Pidl, Pidr, Mi, utils:nowTimestamp());
       true ->
         waitForOrder(Coordinator, Name, WTime, Term, Pidl, Pidr, Mi, utils:nowTimestamp())
     end
