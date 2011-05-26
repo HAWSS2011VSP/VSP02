@@ -26,7 +26,7 @@ waitForNeighbours(Coordinator, Name, WTime, Term, Pidl, Pidr, Mi, LastRecv) ->
   receive
     {setneighbours, {NewPidl, NewPidr}} ->
       io:format("~s got his neighbours.~n", [Name]),
-      waitForOrder(Coordinator, Name, WTime, Term, NewPidl, NewPidr, Mi, LastRecv);
+      waitForNeighbours(Coordinator, Name, WTime, Term, NewPidl, NewPidr, Mi, LastRecv);
     {setinitial, {Value}} ->
       io:format("~s got initial value: ~w~n", [Name, Value]),
       waitForOrder(Coordinator, Name, WTime, Term, Pidl, Pidr, Value, LastRecv)
@@ -35,20 +35,20 @@ waitForNeighbours(Coordinator, Name, WTime, Term, Pidl, Pidr, Mi, LastRecv) ->
 waitForOrder(Coordinator, Name, WTime, Term, Pidl, Pidr, Mi, LastRecv) ->
   receive
     {gcd, {Num}} ->
-      io:format("~s calculating gcd.~n", [Name]),
-      NewMi = Mi rem Num,
+      io:format("~s got num: ~w Mi is: ~w~n", [Name, Num, Mi]),
+      if 
+        Num < Mi -> NewMi = ((Mi-1) rem Num)+1;
+        true -> NewMi = Mi
+      end,
       timer:sleep(WTime),
       if
-        NewMi == 0 ->
-          io:format("Maybe got the value: ~w~n", [Num]),
-          waitForOrder(Coordinator, Name, WTime, Term, Pidl, Pidr, Num, utils:nowTimestamp());
         NewMi =/= Mi ->
           report(Coordinator, Name, NewMi),
+          Pidl ! {gcd, {NewMi}},
           Pidr ! {gcd, {NewMi}},
           waitForOrder(Coordinator, Name, WTime, Term, Pidl, Pidr, NewMi, utils:nowTimestamp());
         true ->
           io:format("~s: No change after calculation.~n", [Name]),
-          Pidr ! {gcd, {Mi}},
           waitForOrder(Coordinator, Name, WTime, Term, Pidl, Pidr, Mi, utils:nowTimestamp())
       end;
       {terminate, Pid} ->
