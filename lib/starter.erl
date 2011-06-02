@@ -2,7 +2,7 @@
 -export([start/4]).
 
 start(Coordinator, PraktID, TeamID, StarterID) ->
-  net_kernel:start([starter, shortnames]),
+  net_kernel:start([node()]),
   net_kernel:connect_node(Coordinator),
   case getValues({coordinator, Coordinator}, 10) of
     {ok, {PNum, WTime, Term}} ->

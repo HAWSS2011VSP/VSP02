@@ -1,0 +1,1140 @@
+Coordinator running...
+Got some values from <6647.1.0>.
+Initialized.
+Sending steering vals.
+GCD process 7310912102 said hello.
+GCD process 7310912106 said hello.
+GCD process 7310912104 said hello.
+GCD process 7310912109 said hello.
+GCD process 7310912108 said hello.
+GCD process 7310912105 said hello.
+GCD process 7310912103 said hello.
+GCD process 7310912101 said hello.
+GCD process 7310912107 said hello.
+GCD process 7310912100 said hello.
+GCD process 731091299 said hello.
+GCD process 731091298 said hello.
+GCD process 731091297 said hello.
+GCD process 731091296 said hello.
+GCD process 731091295 said hello.
+GCD process 731091294 said hello.
+GCD process 731091293 said hello.
+GCD process 731091292 said hello.
+GCD process 731091291 said hello.
+GCD process 731091290 said hello.
+GCD process 731091289 said hello.
+GCD process 731091288 said hello.
+GCD process 731091287 said hello.
+GCD process 731091286 said hello.
+GCD process 731091285 said hello.
+GCD process 731091284 said hello.
+GCD process 731091283 said hello.
+GCD process 731091282 said hello.
+GCD process 731091281 said hello.
+GCD process 731091280 said hello.
+GCD process 731091279 said hello.
+GCD process 731091278 said hello.
+GCD process 731091277 said hello.
+GCD process 731091276 said hello.
+GCD process 731091275 said hello.
+GCD process 731091274 said hello.
+GCD process 731091273 said hello.
+GCD process 731091272 said hello.
+GCD process 731091271 said hello.
+GCD process 731091270 said hello.
+GCD process 731091269 said hello.
+GCD process 731091268 said hello.
+GCD process 731091267 said hello.
+GCD process 731091266 said hello.
+GCD process 731091265 said hello.
+GCD process 731091264 said hello.
+GCD process 731091263 said hello.
+GCD process 731091262 said hello.
+GCD process 731091261 said hello.
+GCD process 731091260 said hello.
+GCD process 731091259 said hello.
+GCD process 731091258 said hello.
+GCD process 731091257 said hello.
+GCD process 731091256 said hello.
+GCD process 731091255 said hello.
+GCD process 731091254 said hello.
+GCD process 731091253 said hello.
+GCD process 731091252 said hello.
+GCD process 731091251 said hello.
+GCD process 731091250 said hello.
+GCD process 731091249 said hello.
+GCD process 731091248 said hello.
+GCD process 731091247 said hello.
+GCD process 731091246 said hello.
+GCD process 731091245 said hello.
+GCD process 731091244 said hello.
+GCD process 731091243 said hello.
+GCD process 731091242 said hello.
+GCD process 731091241 said hello.
+GCD process 731091240 said hello.
+GCD process 731091239 said hello.
+GCD process 731091238 said hello.
+GCD process 731091237 said hello.
+GCD process 731091236 said hello.
+GCD process 731091235 said hello.
+GCD process 731091234 said hello.
+GCD process 731091233 said hello.
+GCD process 731091232 said hello.
+GCD process 731091231 said hello.
+GCD process 731091230 said hello.
+GCD process 731091229 said hello.
+GCD process 731091228 said hello.
+GCD process 731091227 said hello.
+GCD process 731091226 said hello.
+GCD process 731091225 said hello.
+GCD process 731091224 said hello.
+GCD process 731091223 said hello.
+GCD process 731091222 said hello.
+GCD process 731091221 said hello.
+GCD process 731091220 said hello.
+GCD process 731091219 said hello.
+GCD process 731091218 said hello.
+GCD process 731091217 said hello.
+GCD process 731091216 said hello.
+GCD process 731091215 said hello.
+GCD process 731091214 said hello.
+GCD process 731091213 said hello.
+GCD process 731091212 said hello.
+GCD process 731091211 said hello.
+GCD process 731091210 said hello.
+GCD process 73109129 said hello.
+GCD process 73109128 said hello.
+GCD process 73109127 said hello.
+GCD process 73109126 said hello.
+GCD process 73109125 said hello.
+GCD process 73109124 said hello.
+GCD process 73109123 said hello.
+GCD process 73109122 said hello.
+GCD process 73109121 said hello.
+Did not understand {ready,{[55,51,49,48,57,49,50,49,48,50]}}.
+Did not understand {ready,{[55,51,49,48,57,49,50,49,48,52]}}.
+Did not understand {ready,{[55,51,49,48,57,49,50,49,48,56]}}.
+Did not understand {ready,{[55,51,49,48,57,49,50,49,48,57]}}.
+Did not understand {ready,{[55,51,49,48,57,49,50,49,48,54]}}.
+Did not understand {ready,{[55,51,49,48,57,49,50,49,48,51]}}.
+Did not understand {ready,{[55,51,49,48,57,49,50,49,48,49]}}.
+Did not understand {ready,{[55,51,49,48,57,49,50,49,48,53]}}.
+Did not understand {ready,{[55,51,49,48,57,49,50,49,48,48]}}.
+Did not understand {ready,{[55,51,49,48,57,49,50,49,48,55]}}.
+Did not understand {ready,{[55,51,49,48,57,49,50,57,56]}}.
+Did not understand {ready,{[55,51,49,48,57,49,50,57,57]}}.
+Did not understand {ready,{[55,51,49,48,57,49,50,57,55]}}.
+Did not understand {ready,{[55,51,49,48,57,49,50,57,51]}}.
+Did not understand {ready,{[55,51,49,48,57,49,50,57,52]}}.
+Did not understand {ready,{[55,51,49,48,57,49,50,57,53]}}.
+Did not understand {ready,{[55,51,49,48,57,49,50,57,54]}}.
+Did not understand {ready,{[55,51,49,48,57,49,50,56,57]}}.
+Did not understand {ready,{[55,51,49,48,57,49,50,57,48]}}.
+Did not understand {ready,{[55,51,49,48,57,49,50,57,49]}}.
+Did not understand {ready,{[55,51,49,48,57,49,50,57,50]}}.
+Did not understand {ready,{[55,51,49,48,57,49,50,56,56]}}.
+Did not understand {ready,{[55,51,49,48,57,49,50,56,55]}}.
+Did not understand {ready,{[55,51,49,48,57,49,50,56,54]}}.
+Did not understand {ready,{[55,51,49,48,57,49,50,56,53]}}.
+Did not understand {ready,{[55,51,49,48,57,49,50,56,52]}}.
+Did not understand {ready,{[55,51,49,48,57,49,50,56,51]}}.
+Did not understand {ready,{[55,51,49,48,57,49,50,55,57]}}.
+Did not understand {ready,{[55,51,49,48,57,49,50,56,50]}}.
+Did not understand {ready,{[55,51,49,48,57,49,50,55,56]}}.
+Did not understand {ready,{[55,51,49,48,57,49,50,56,48]}}.
+Did not understand {ready,{[55,51,49,48,57,49,50,56,49]}}.
+Did not understand {ready,{[55,51,49,48,57,49,50,55,55]}}.
+Did not understand {ready,{[55,51,49,48,57,49,50,55,54]}}.
+Did not understand {ready,{[55,51,49,48,57,49,50,55,53]}}.
+Did not understand {ready,{[55,51,49,48,57,49,50,55,52]}}.
+Did not understand {ready,{[55,51,49,48,57,49,50,55,51]}}.
+Did not understand {ready,{[55,51,49,48,57,49,50,55,49]}}.
+Did not understand {ready,{[55,51,49,48,57,49,50,55,50]}}.
+Did not understand {ready,{[55,51,49,48,57,49,50,55,48]}}.
+Did not understand {ready,{[55,51,49,48,57,49,50,54,57]}}.
+Did not understand {ready,{[55,51,49,48,57,49,50,54,56]}}.
+Did not understand {ready,{[55,51,49,48,57,49,50,54,55]}}.
+Did not understand {ready,{[55,51,49,48,57,49,50,54,54]}}.
+Did not understand {ready,{[55,51,49,48,57,49,50,54,53]}}.
+Did not understand {ready,{[55,51,49,48,57,49,50,54,51]}}.
+Did not understand {ready,{[55,51,49,48,57,49,50,54,52]}}.
+Did not understand {ready,{[55,51,49,48,57,49,50,54,50]}}.
+Did not understand {ready,{[55,51,49,48,57,49,50,54,49]}}.
+Did not understand {ready,{[55,51,49,48,57,49,50,54,48]}}.
+Did not understand {ready,{[55,51,49,48,57,49,50,53,57]}}.
+Did not understand {ready,{[55,51,49,48,57,49,50,53,56]}}.
+Did not understand {ready,{[55,51,49,48,57,49,50,53,55]}}.
+Did not understand {ready,{[55,51,49,48,57,49,50,53,54]}}.
+Did not understand {ready,{[55,51,49,48,57,49,50,53,53]}}.
+Did not understand {ready,{[55,51,49,48,57,49,50,53,52]}}.
+Did not understand {ready,{[55,51,49,48,57,49,50,53,51]}}.
+Did not understand {ready,{[55,51,49,48,57,49,50,53,50]}}.
+Did not understand {ready,{[55,51,49,48,57,49,50,53,49]}}.
+Did not understand {ready,{[55,51,49,48,57,49,50,53,48]}}.
+Did not understand {ready,{[55,51,49,48,57,49,50,52,57]}}.
+Did not understand {ready,{[55,51,49,48,57,49,50,52,56]}}.
+Did not understand {ready,{[55,51,49,48,57,49,50,52,54]}}.
+Did not understand {ready,{[55,51,49,48,57,49,50,52,55]}}.
+Did not understand {ready,{[55,51,49,48,57,49,50,52,52]}}.
+Did not understand {ready,{[55,51,49,48,57,49,50,52,53]}}.
+Did not understand {ready,{[55,51,49,48,57,49,50,52,51]}}.
+Did not understand {ready,{[55,51,49,48,57,49,50,52,50]}}.
+Did not understand {ready,{[55,51,49,48,57,49,50,52,49]}}.
+Did not understand {ready,{[55,51,49,48,57,49,50,52,48]}}.
+Did not understand {ready,{[55,51,49,48,57,49,50,51,57]}}.
+Did not understand {ready,{[55,51,49,48,57,49,50,51,56]}}.
+Did not understand {ready,{[55,51,49,48,57,49,50,51,55]}}.
+Did not understand {ready,{[55,51,49,48,57,49,50,51,54]}}.
+Did not understand {ready,{[55,51,49,48,57,49,50,51,51]}}.
+Did not understand {ready,{[55,51,49,48,57,49,50,51,53]}}.
+Did not understand {ready,{[55,51,49,48,57,49,50,51,52]}}.
+Did not understand {ready,{[55,51,49,48,57,49,50,51,50]}}.
+Did not understand {ready,{[55,51,49,48,57,49,50,51,49]}}.
+Did not understand {ready,{[55,51,49,48,57,49,50,51,48]}}.
+Did not understand {ready,{[55,51,49,48,57,49,50,50,57]}}.
+Did not understand {ready,{[55,51,49,48,57,49,50,50,56]}}.
+Did not understand {ready,{[55,51,49,48,57,49,50,50,55]}}.
+Did not understand {ready,{[55,51,49,48,57,49,50,50,54]}}.
+Did not understand {ready,{[55,51,49,48,57,49,50,50,53]}}.
+Did not understand {ready,{[55,51,49,48,57,49,50,50,52]}}.
+Did not understand {ready,{[55,51,49,48,57,49,50,50,51]}}.
+Did not understand {ready,{[55,51,49,48,57,49,50,50,50]}}.
+Did not understand {ready,{[55,51,49,48,57,49,50,50,49]}}.
+Did not understand {ready,{[55,51,49,48,57,49,50,50,48]}}.
+Did not understand {ready,{[55,51,49,48,57,49,50,49,57]}}.
+Did not understand {ready,{[55,51,49,48,57,49,50,49,56]}}.
+Did not understand {ready,{[55,51,49,48,57,49,50,49,55]}}.
+Did not understand {ready,{[55,51,49,48,57,49,50,49,54]}}.
+Did not understand {ready,{[55,51,49,48,57,49,50,49,53]}}.
+Did not understand {ready,{[55,51,49,48,57,49,50,49,52]}}.
+Did not understand {ready,{[55,51,49,48,57,49,50,49,51]}}.
+Did not understand {ready,{[55,51,49,48,57,49,50,49,50]}}.
+Did not understand {ready,{[55,51,49,48,57,49,50,49,49]}}.
+Did not understand {ready,{[55,51,49,48,57,49,50,49,48]}}.
+Did not understand {ready,{[55,51,49,48,57,49,50,57]}}.
+Did not understand {ready,{[55,51,49,48,57,49,50,56]}}.
+Did not understand {ready,{[55,51,49,48,57,49,50,55]}}.
+Did not understand {ready,{[55,51,49,48,57,49,50,52]}}.
+Did not understand {ready,{[55,51,49,48,57,49,50,53]}}.
+Did not understand {ready,{[55,51,49,48,57,49,50,50]}}.
+Did not understand {ready,{[55,51,49,48,57,49,50,51]}}.
+Did not understand {ready,{[55,51,49,48,57,49,50,54]}}.
+Did not understand {ready,{[55,51,49,48,57,49,50,49]}}.
+Sending steering vals.
+GCD process 7317312173 said hello.
+GCD process 7317312168 said hello.
+GCD process 7317312167 said hello.
+GCD process 7317312169 said hello.
+GCD process 7317312170 said hello.
+GCD process 7317312171 said hello.
+GCD process 7317312172 said hello.
+GCD process 7317312166 said hello.
+GCD process 7317312165 said hello.
+GCD process 7317312164 said hello.
+GCD process 7317312163 said hello.
+GCD process 7317312162 said hello.
+GCD process 7317312161 said hello.
+GCD process 7317312160 said hello.
+GCD process 7317312159 said hello.
+GCD process 7317312158 said hello.
+GCD process 7317312157 said hello.
+GCD process 7317312156 said hello.
+GCD process 7317312155 said hello.
+GCD process 7317312154 said hello.
+GCD process 7317312153 said hello.
+GCD process 7317312152 said hello.
+GCD process 7317312151 said hello.
+GCD process 7317312150 said hello.
+GCD process 7317312149 said hello.
+GCD process 7317312148 said hello.
+GCD process 7317312147 said hello.
+GCD process 7317312146 said hello.
+GCD process 7317312145 said hello.
+GCD process 7317312144 said hello.
+GCD process 7317312143 said hello.
+GCD process 7317312142 said hello.
+GCD process 7317312141 said hello.
+GCD process 7317312140 said hello.
+GCD process 7317312139 said hello.
+GCD process 7317312138 said hello.
+GCD process 7317312137 said hello.
+GCD process 7317312136 said hello.
+GCD process 7317312135 said hello.
+GCD process 7317312134 said hello.
+GCD process 7317312133 said hello.
+GCD process 7317312132 said hello.
+GCD process 7317312131 said hello.
+GCD process 7317312130 said hello.
+GCD process 7317312129 said hello.
+GCD process 7317312128 said hello.
+GCD process 7317312127 said hello.
+GCD process 7317312126 said hello.
+GCD process 7317312125 said hello.
+GCD process 7317312124 said hello.
+GCD process 7317312123 said hello.
+GCD process 7317312122 said hello.
+GCD process 7317312121 said hello.
+GCD process 7317312120 said hello.
+GCD process 7317312119 said hello.
+GCD process 7317312118 said hello.
+GCD process 7317312117 said hello.
+GCD process 7317312116 said hello.
+GCD process 7317312115 said hello.
+GCD process 7317312114 said hello.
+GCD process 7317312113 said hello.
+GCD process 7317312112 said hello.
+GCD process 7317312111 said hello.
+GCD process 7317312110 said hello.
+GCD process 7317312109 said hello.
+GCD process 7317312108 said hello.
+GCD process 7317312107 said hello.
+GCD process 7317312106 said hello.
+GCD process 7317312105 said hello.
+GCD process 7317312104 said hello.
+GCD process 7317312103 said hello.
+GCD process 7317312102 said hello.
+GCD process 7317312101 said hello.
+GCD process 7317312100 said hello.
+GCD process 731731299 said hello.
+GCD process 731731298 said hello.
+GCD process 731731297 said hello.
+GCD process 731731296 said hello.
+GCD process 731731295 said hello.
+GCD process 731731294 said hello.
+GCD process 731731293 said hello.
+GCD process 731731292 said hello.
+GCD process 731731291 said hello.
+GCD process 731731290 said hello.
+GCD process 731731289 said hello.
+GCD process 731731288 said hello.
+GCD process 731731287 said hello.
+GCD process 731731286 said hello.
+GCD process 731731285 said hello.
+GCD process 731731284 said hello.
+GCD process 731731283 said hello.
+GCD process 731731282 said hello.
+GCD process 731731281 said hello.
+GCD process 731731280 said hello.
+GCD process 731731279 said hello.
+GCD process 731731278 said hello.
+GCD process 731731277 said hello.
+GCD process 731731276 said hello.
+GCD process 731731275 said hello.
+GCD process 731731274 said hello.
+GCD process 731731273 said hello.
+GCD process 731731272 said hello.
+GCD process 731731271 said hello.
+GCD process 731731270 said hello.
+Did not understand {ready,{[55,51,49,55,51,49,50,49,55,51]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,49,54,57]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,49,54,56]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,49,54,55]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,49,55,48]}}.
+GCD process 731731269 said hello.
+GCD process 731731268 said hello.
+Did not understand {ready,{[55,51,49,55,51,49,50,49,54,51]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,49,54,50]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,49,53,56]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,49,53,53]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,49,53,48]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,49,52,55]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,49,52,53]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,49,52,51]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,49,52,50]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,49,52,49]}}.
+GCD process 731731267 said hello.
+Did not understand {ready,{[55,51,49,55,51,49,50,49,52,52]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,49,55,49]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,49,55,50]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,49,54,54]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,49,54,53]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,49,54,52]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,49,54,49]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,49,54,48]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,49,53,57]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,49,53,55]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,49,53,54]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,49,53,52]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,49,51,50]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,49,53,51]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,49,51,49]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,49,53,50]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,49,53,49]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,49,52,57]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,49,52,56]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,49,52,54]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,49,51,51]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,49,52,48]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,49,51,57]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,49,51,56]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,49,51,55]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,49,51,54]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,49,51,53]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,49,51,52]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,49,51,48]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,49,50,57]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,49,50,56]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,49,50,55]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,49,50,54]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,49,50,53]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,49,50,52]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,49,50,51]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,49,50,50]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,49,50,49]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,49,50,48]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,49,49,57]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,49,49,56]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,49,49,55]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,49,49,54]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,49,49,53]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,49,49,52]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,49,49,51]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,49,49,50]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,49,49,49]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,49,49,48]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,49,48,57]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,49,48,56]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,49,48,55]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,49,48,54]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,49,48,53]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,49,48,52]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,49,48,51]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,49,48,50]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,56,56]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,57,50]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,57,51]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,57,52]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,56,57]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,57,48]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,57,53]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,57,54]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,57,55]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,57,49]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,49,48,49]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,57,56]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,55,49]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,55,50]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,55,51]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,55,52]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,55,53]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,55,54]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,55,55]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,55,56]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,55,57]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,56,48]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,49,48,48]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,56,49]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,56,50]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,56,51]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,56,52]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,56,53]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,54,57]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,56,54]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,55,48]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,56,55]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,54,55]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,54,56]}}.
+GCD process 731731266 said hello.
+Did not understand {ready,{[55,51,49,55,51,49,50,57,57]}}.
+GCD process 731731264 said hello.
+GCD process 731731265 said hello.
+GCD process 731731263 said hello.
+GCD process 731731262 said hello.
+GCD process 731731261 said hello.
+GCD process 731731260 said hello.
+GCD process 731731259 said hello.
+GCD process 731731258 said hello.
+GCD process 731731257 said hello.
+GCD process 731731256 said hello.
+GCD process 731731255 said hello.
+GCD process 731731254 said hello.
+GCD process 731731253 said hello.
+GCD process 731731252 said hello.
+GCD process 731731251 said hello.
+GCD process 731731250 said hello.
+GCD process 731731249 said hello.
+GCD process 731731248 said hello.
+GCD process 731731247 said hello.
+GCD process 731731246 said hello.
+GCD process 731731245 said hello.
+GCD process 731731244 said hello.
+GCD process 731731243 said hello.
+GCD process 731731242 said hello.
+GCD process 731731241 said hello.
+GCD process 731731240 said hello.
+GCD process 731731239 said hello.
+GCD process 731731238 said hello.
+GCD process 731731237 said hello.
+GCD process 731731236 said hello.
+GCD process 731731235 said hello.
+GCD process 731731234 said hello.
+GCD process 731731233 said hello.
+GCD process 731731232 said hello.
+GCD process 731731231 said hello.
+GCD process 731731230 said hello.
+GCD process 731731229 said hello.
+GCD process 731731228 said hello.
+GCD process 731731227 said hello.
+GCD process 731731226 said hello.
+GCD process 731731225 said hello.
+GCD process 731731224 said hello.
+Did not understand {ready,{[55,51,49,55,51,49,50,54,54]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,54,52]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,54,51]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,54,50]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,54,49]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,54,48]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,53,57]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,53,56]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,53,55]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,53,54]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,53,53]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,53,52]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,53,51]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,53,50]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,53,49]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,53,48]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,52,57]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,52,56]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,52,55]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,52,54]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,52,53]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,52,52]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,52,51]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,52,50]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,52,49]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,52,48]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,51,57]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,51,56]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,51,55]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,51,54]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,51,53]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,51,52]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,51,51]}}.
+GCD process 731731223 said hello.
+GCD process 731731222 said hello.
+Did not understand {ready,{[55,51,49,55,51,49,50,51,50]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,51,49]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,51,48]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,54,53]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,50,57]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,50,56]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,50,55]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,50,54]}}.
+GCD process 731731221 said hello.
+Did not understand {ready,{[55,51,49,55,51,49,50,50,53]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,50,52]}}.
+GCD process 731731220 said hello.
+GCD process 731731219 said hello.
+GCD process 731731218 said hello.
+GCD process 731731217 said hello.
+GCD process 731731216 said hello.
+GCD process 731731215 said hello.
+Did not understand {ready,{[55,51,49,55,51,49,50,50,51]}}.
+GCD process 731731214 said hello.
+Did not understand {ready,{[55,51,49,55,51,49,50,50,50]}}.
+GCD process 731731213 said hello.
+GCD process 731731212 said hello.
+GCD process 731731211 said hello.
+GCD process 731731210 said hello.
+GCD process 73173129 said hello.
+GCD process 73173128 said hello.
+Did not understand {ready,{[55,51,49,55,51,49,50,50,49]}}.
+GCD process 73173127 said hello.
+GCD process 73173126 said hello.
+Did not understand {ready,{[55,51,49,55,51,49,50,50,48]}}.
+GCD process 73173125 said hello.
+Did not understand {ready,{[55,51,49,55,51,49,50,49,57]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,49,56]}}.
+GCD process 73173124 said hello.
+GCD process 73173122 said hello.
+Did not understand {ready,{[55,51,49,55,51,49,50,49,55]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,49,54]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,49,53]}}.
+GCD process 73173121 said hello.
+GCD process 73173123 said hello.
+Did not understand {ready,{[55,51,49,55,51,49,50,49,50]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,49,52]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,49,51]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,49,49]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,49,48]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,57]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,56]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,55]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,54]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,53]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,52]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,50]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,49]}}.
+Did not understand {ready,{[55,51,49,55,51,49,50,51]}}.
+Building ring.
+building ring with [<6652.211.0>,<6652.213.0>,<6652.212.0>,<6652.210.0>,<6652.209.0>,<6652.208.0>,<6652.207.0>,<6652.206.0>,<6652.205.0>,<6652.204.0>,<6652.203.0>,<6652.202.0>,<6652.201.0>,<6652.200.0>,<6652.199.0>,<6652.198.0>,<6652.197.0>,<6652.196.0>,<6652.195.0>,<6652.194.0>,<6652.193.0>,<6652.192.0>,<6652.191.0>,<6652.190.0>,<6652.189.0>,<6652.188.0>,<6652.187.0>,<6652.186.0>,<6652.185.0>,<6652.184.0>,<6652.183.0>,<6652.182.0>,<6652.181.0>,<6652.180.0>,<6652.179.0>,<6652.178.0>,<6652.177.0>,<6652.176.0>,<6652.175.0>,<6652.174.0>,<6652.173.0>,<6652.172.0>,<6652.171.0>,<6652.170.0>,<6652.169.0>,<6652.168.0>,<6652.167.0>,<6652.166.0>,<6652.165.0>,<6652.164.0>,<6652.163.0>,<6652.162.0>,<6652.161.0>,<6652.160.0>,<6652.159.0>,<6652.158.0>,<6652.157.0>,<6652.156.0>,<6652.155.0>,<6652.154.0>,<6652.153.0>,<6652.152.0>,<6652.151.0>,<6652.149.0>,<6652.150.0>,<6652.148.0>,<6652.147.0>,<6652.146.0>,<6652.145.0>,<6652.144.0>,<6652.143.0>,<6652.142.0>,<6652.141.0>,<6652.140.0>,<6652.139.0>,<6652.138.0>,<6652.137.0>,<6652.136.0>,<6652.135.0>,<6652.134.0>,<6652.133.0>,<6652.132.0>,<6652.131.0>,<6652.130.0>,<6652.129.0>,<6652.128.0>,<6652.127.0>,<6652.126.0>,<6652.125.0>,<6652.124.0>,<6652.123.0>,<6652.122.0>,<6652.121.0>,<6652.120.0>,<6652.119.0>,<6652.118.0>,<6652.117.0>,<6652.116.0>,<6652.115.0>,<6652.114.0>,<6652.113.0>,<6652.112.0>,<6652.111.0>,<6652.110.0>,<6652.109.0>,<6652.108.0>,<6652.107.0>,<6652.106.0>,<6652.105.0>,<6652.104.0>,<6652.103.0>,<6652.102.0>,<6652.101.0>,<6652.100.0>,<6652.99.0>,<6652.98.0>,<6652.97.0>,<6652.96.0>,<6652.95.0>,<6652.94.0>,<6652.93.0>,<6652.92.0>,<6652.91.0>,<6652.90.0>,<6652.89.0>,<6652.88.0>,<6652.87.0>,<6652.86.0>,<6652.85.0>,<6652.84.0>,<6652.83.0>,<6652.82.0>,<6652.81.0>,<6652.80.0>,<6652.79.0>,<6652.78.0>,<6652.77.0>,<6652.76.0>,<6652.75.0>,<6652.74.0>,<6652.73.0>,<6652.72.0>,<6652.71.0>,<6652.70.0>,<6652.69.0>,<6652.68.0>,<6652.67.0>,<6652.66.0>,<6652.65.0>,<6652.64.0>,<6652.63.0>,<6652.62.0>,<6652.61.0>,<6652.60.0>,<6652.59.0>,<6652.58.0>,<6652.57.0>,<6652.56.0>,<6652.55.0>,<6652.54.0>,<6652.53.0>,<6652.52.0>,<6652.51.0>,<6652.50.0>,<6652.49.0>,<6652.48.0>,<6652.42.0>,<6652.43.0>,<6652.44.0>,<6652.45.0>,<6652.47.0>,<6652.46.0>,<6652.41.0>,<6648.149.0>,<6648.148.0>,<6648.147.0>,<6648.146.0>,<6648.145.0>,<6648.144.0>,<6648.143.0>,<6648.142.0>,<6648.141.0>,<6648.140.0>,<6648.139.0>,<6648.138.0>,<6648.137.0>,<6648.136.0>,<6648.135.0>,<6648.134.0>,<6648.133.0>,<6648.132.0>,<6648.131.0>,<6648.130.0>,<6648.129.0>,<6648.128.0>,<6648.127.0>,<6648.126.0>,<6648.125.0>,<6648.124.0>,<6648.123.0>,<6648.122.0>,<6648.121.0>,<6648.120.0>,<6648.119.0>,<6648.118.0>,<6648.117.0>,<6648.116.0>,<6648.115.0>,<6648.114.0>,<6648.113.0>,<6648.112.0>,<6648.111.0>,<6648.110.0>,<6648.109.0>,<6648.108.0>,<6648.107.0>,<6648.106.0>,<6648.105.0>,<6648.104.0>,<6648.103.0>,<6648.102.0>,<6648.101.0>,<6648.100.0>,<6648.99.0>,<6648.98.0>,<6648.97.0>,<6648.96.0>,<6648.95.0>,<6648.94.0>,<6648.93.0>,<6648.92.0>,<6648.91.0>,<6648.90.0>,<6648.89.0>,<6648.88.0>,<6648.87.0>,<6648.86.0>,<6648.85.0>,<6648.84.0>,<6648.83.0>,<6648.82.0>,<6648.81.0>,<6648.80.0>,<6648.79.0>,<6648.78.0>,<6648.77.0>,<6648.76.0>,<6648.75.0>,<6648.74.0>,<6648.73.0>,<6648.72.0>,<6648.71.0>,<6648.70.0>,<6648.69.0>,<6648.68.0>,<6648.67.0>,<6648.66.0>,<6648.65.0>,<6648.64.0>,<6648.63.0>,<6648.62.0>,<6648.61.0>,<6648.60.0>,<6648.59.0>,<6648.58.0>,<6648.57.0>,<6648.56.0>,<6648.55.0>,<6648.54.0>,<6648.53.0>,<6648.52.0>,<6648.51.0>,<6648.50.0>,<6648.43.0>,<6648.49.0>,<6648.47.0>,<6648.45.0>,<6648.42.0>,<6648.41.0>,<6648.46.0>,<6648.44.0>,<6648.48.0>].
+
+=ERROR REPORT==== 2-Jun-2011::18:49:11 ===
+** System running to use fully qualified hostnames **
+** Hostname localhost is illegal **
+Setting Neighbours for <6652.211.0>, Left: <6648.48.0>, Right: <6652.213.0>
+Setting Neighbours for <6652.213.0>, Left: <6652.211.0>, Right: <6652.212.0>
+Setting Neighbours for <6652.212.0>, Left: <6652.213.0>, Right: <6652.210.0>
+Setting Neighbours for <6652.210.0>, Left: <6652.212.0>, Right: <6652.209.0>
+Setting Neighbours for <6652.209.0>, Left: <6652.210.0>, Right: <6652.208.0>
+Setting Neighbours for <6652.208.0>, Left: <6652.209.0>, Right: <6652.207.0>
+Setting Neighbours for <6652.207.0>, Left: <6652.208.0>, Right: <6652.206.0>
+Setting Neighbours for <6652.206.0>, Left: <6652.207.0>, Right: <6652.205.0>
+Setting Neighbours for <6652.205.0>, Left: <6652.206.0>, Right: <6652.204.0>
+Setting Neighbours for <6652.204.0>, Left: <6652.205.0>, Right: <6652.203.0>
+Setting Neighbours for <6652.203.0>, Left: <6652.204.0>, Right: <6652.202.0>
+Setting Neighbours for <6652.202.0>, Left: <6652.203.0>, Right: <6652.201.0>
+Setting Neighbours for <6652.201.0>, Left: <6652.202.0>, Right: <6652.200.0>
+Setting Neighbours for <6652.200.0>, Left: <6652.201.0>, Right: <6652.199.0>
+Setting Neighbours for <6652.199.0>, Left: <6652.200.0>, Right: <6652.198.0>
+Setting Neighbours for <6652.198.0>, Left: <6652.199.0>, Right: <6652.197.0>
+Setting Neighbours for <6652.197.0>, Left: <6652.198.0>, Right: <6652.196.0>
+Setting Neighbours for <6652.196.0>, Left: <6652.197.0>, Right: <6652.195.0>
+Setting Neighbours for <6652.195.0>, Left: <6652.196.0>, Right: <6652.194.0>
+Setting Neighbours for <6652.194.0>, Left: <6652.195.0>, Right: <6652.193.0>
+Setting Neighbours for <6652.193.0>, Left: <6652.194.0>, Right: <6652.192.0>
+Setting Neighbours for <6652.192.0>, Left: <6652.193.0>, Right: <6652.191.0>
+Setting Neighbours for <6652.191.0>, Left: <6652.192.0>, Right: <6652.190.0>
+Setting Neighbours for <6652.190.0>, Left: <6652.191.0>, Right: <6652.189.0>
+Setting Neighbours for <6652.189.0>, Left: <6652.190.0>, Right: <6652.188.0>
+Setting Neighbours for <6652.188.0>, Left: <6652.189.0>, Right: <6652.187.0>
+Setting Neighbours for <6652.187.0>, Left: <6652.188.0>, Right: <6652.186.0>
+Setting Neighbours for <6652.186.0>, Left: <6652.187.0>, Right: <6652.185.0>
+Setting Neighbours for <6652.185.0>, Left: <6652.186.0>, Right: <6652.184.0>
+Setting Neighbours for <6652.184.0>, Left: <6652.185.0>, Right: <6652.183.0>
+Setting Neighbours for <6652.183.0>, Left: <6652.184.0>, Right: <6652.182.0>
+Setting Neighbours for <6652.182.0>, Left: <6652.183.0>, Right: <6652.181.0>
+Setting Neighbours for <6652.181.0>, Left: <6652.182.0>, Right: <6652.180.0>
+Setting Neighbours for <6652.180.0>, Left: <6652.181.0>, Right: <6652.179.0>
+Setting Neighbours for <6652.179.0>, Left: <6652.180.0>, Right: <6652.178.0>
+Setting Neighbours for <6652.178.0>, Left: <6652.179.0>, Right: <6652.177.0>
+Setting Neighbours for <6652.177.0>, Left: <6652.178.0>, Right: <6652.176.0>
+Setting Neighbours for <6652.176.0>, Left: <6652.177.0>, Right: <6652.175.0>
+Setting Neighbours for <6652.175.0>, Left: <6652.176.0>, Right: <6652.174.0>
+Setting Neighbours for <6652.174.0>, Left: <6652.175.0>, Right: <6652.173.0>
+Setting Neighbours for <6652.173.0>, Left: <6652.174.0>, Right: <6652.172.0>
+Setting Neighbours for <6652.172.0>, Left: <6652.173.0>, Right: <6652.171.0>
+Setting Neighbours for <6652.171.0>, Left: <6652.172.0>, Right: <6652.170.0>
+Setting Neighbours for <6652.170.0>, Left: <6652.171.0>, Right: <6652.169.0>
+Setting Neighbours for <6652.169.0>, Left: <6652.170.0>, Right: <6652.168.0>
+Setting Neighbours for <6652.168.0>, Left: <6652.169.0>, Right: <6652.167.0>
+Setting Neighbours for <6652.167.0>, Left: <6652.168.0>, Right: <6652.166.0>
+Setting Neighbours for <6652.166.0>, Left: <6652.167.0>, Right: <6652.165.0>
+Setting Neighbours for <6652.165.0>, Left: <6652.166.0>, Right: <6652.164.0>
+Setting Neighbours for <6652.164.0>, Left: <6652.165.0>, Right: <6652.163.0>
+Setting Neighbours for <6652.163.0>, Left: <6652.164.0>, Right: <6652.162.0>
+Setting Neighbours for <6652.162.0>, Left: <6652.163.0>, Right: <6652.161.0>
+Setting Neighbours for <6652.161.0>, Left: <6652.162.0>, Right: <6652.160.0>
+Setting Neighbours for <6652.160.0>, Left: <6652.161.0>, Right: <6652.159.0>
+Setting Neighbours for <6652.159.0>, Left: <6652.160.0>, Right: <6652.158.0>
+Setting Neighbours for <6652.158.0>, Left: <6652.159.0>, Right: <6652.157.0>
+Setting Neighbours for <6652.157.0>, Left: <6652.158.0>, Right: <6652.156.0>
+Setting Neighbours for <6652.156.0>, Left: <6652.157.0>, Right: <6652.155.0>
+Setting Neighbours for <6652.155.0>, Left: <6652.156.0>, Right: <6652.154.0>
+Setting Neighbours for <6652.154.0>, Left: <6652.155.0>, Right: <6652.153.0>
+Setting Neighbours for <6652.153.0>, Left: <6652.154.0>, Right: <6652.152.0>
+Setting Neighbours for <6652.152.0>, Left: <6652.153.0>, Right: <6652.151.0>
+Setting Neighbours for <6652.151.0>, Left: <6652.152.0>, Right: <6652.149.0>
+Setting Neighbours for <6652.149.0>, Left: <6652.151.0>, Right: <6652.150.0>
+Setting Neighbours for <6652.150.0>, Left: <6652.149.0>, Right: <6652.148.0>
+Setting Neighbours for <6652.148.0>, Left: <6652.150.0>, Right: <6652.147.0>
+Setting Neighbours for <6652.147.0>, Left: <6652.148.0>, Right: <6652.146.0>
+Setting Neighbours for <6652.146.0>, Left: <6652.147.0>, Right: <6652.145.0>
+Setting Neighbours for <6652.145.0>, Left: <6652.146.0>, Right: <6652.144.0>
+Setting Neighbours for <6652.144.0>, Left: <6652.145.0>, Right: <6652.143.0>
+Setting Neighbours for <6652.143.0>, Left: <6652.144.0>, Right: <6652.142.0>
+Setting Neighbours for <6652.142.0>, Left: <6652.143.0>, Right: <6652.141.0>
+Setting Neighbours for <6652.141.0>, Left: <6652.142.0>, Right: <6652.140.0>
+Setting Neighbours for <6652.140.0>, Left: <6652.141.0>, Right: <6652.139.0>
+Setting Neighbours for <6652.139.0>, Left: <6652.140.0>, Right: <6652.138.0>
+Setting Neighbours for <6652.138.0>, Left: <6652.139.0>, Right: <6652.137.0>
+Setting Neighbours for <6652.137.0>, Left: <6652.138.0>, Right: <6652.136.0>
+Setting Neighbours for <6652.136.0>, Left: <6652.137.0>, Right: <6652.135.0>
+Setting Neighbours for <6652.135.0>, Left: <6652.136.0>, Right: <6652.134.0>
+Setting Neighbours for <6652.134.0>, Left: <6652.135.0>, Right: <6652.133.0>
+Setting Neighbours for <6652.133.0>, Left: <6652.134.0>, Right: <6652.132.0>
+Setting Neighbours for <6652.132.0>, Left: <6652.133.0>, Right: <6652.131.0>
+Setting Neighbours for <6652.131.0>, Left: <6652.132.0>, Right: <6652.130.0>
+Setting Neighbours for <6652.130.0>, Left: <6652.131.0>, Right: <6652.129.0>
+Setting Neighbours for <6652.129.0>, Left: <6652.130.0>, Right: <6652.128.0>
+Setting Neighbours for <6652.128.0>, Left: <6652.129.0>, Right: <6652.127.0>
+Setting Neighbours for <6652.127.0>, Left: <6652.128.0>, Right: <6652.126.0>
+Setting Neighbours for <6652.126.0>, Left: <6652.127.0>, Right: <6652.125.0>
+Setting Neighbours for <6652.125.0>, Left: <6652.126.0>, Right: <6652.124.0>
+Setting Neighbours for <6652.124.0>, Left: <6652.125.0>, Right: <6652.123.0>
+Setting Neighbours for <6652.123.0>, Left: <6652.124.0>, Right: <6652.122.0>
+Setting Neighbours for <6652.122.0>, Left: <6652.123.0>, Right: <6652.121.0>
+Setting Neighbours for <6652.121.0>, Left: <6652.122.0>, Right: <6652.120.0>
+Setting Neighbours for <6652.120.0>, Left: <6652.121.0>, Right: <6652.119.0>
+Setting Neighbours for <6652.119.0>, Left: <6652.120.0>, Right: <6652.118.0>
+Setting Neighbours for <6652.118.0>, Left: <6652.119.0>, Right: <6652.117.0>
+Setting Neighbours for <6652.117.0>, Left: <6652.118.0>, Right: <6652.116.0>
+Setting Neighbours for <6652.116.0>, Left: <6652.117.0>, Right: <6652.115.0>
+Setting Neighbours for <6652.115.0>, Left: <6652.116.0>, Right: <6652.114.0>
+Setting Neighbours for <6652.114.0>, Left: <6652.115.0>, Right: <6652.113.0>
+Setting Neighbours for <6652.113.0>, Left: <6652.114.0>, Right: <6652.112.0>
+Setting Neighbours for <6652.112.0>, Left: <6652.113.0>, Right: <6652.111.0>
+Setting Neighbours for <6652.111.0>, Left: <6652.112.0>, Right: <6652.110.0>
+Setting Neighbours for <6652.110.0>, Left: <6652.111.0>, Right: <6652.109.0>
+Setting Neighbours for <6652.109.0>, Left: <6652.110.0>, Right: <6652.108.0>
+Setting Neighbours for <6652.108.0>, Left: <6652.109.0>, Right: <6652.107.0>
+Setting Neighbours for <6652.107.0>, Left: <6652.108.0>, Right: <6652.106.0>
+Setting Neighbours for <6652.106.0>, Left: <6652.107.0>, Right: <6652.105.0>
+Setting Neighbours for <6652.105.0>, Left: <6652.106.0>, Right: <6652.104.0>
+Setting Neighbours for <6652.104.0>, Left: <6652.105.0>, Right: <6652.103.0>
+Setting Neighbours for <6652.103.0>, Left: <6652.104.0>, Right: <6652.102.0>
+Setting Neighbours for <6652.102.0>, Left: <6652.103.0>, Right: <6652.101.0>
+Setting Neighbours for <6652.101.0>, Left: <6652.102.0>, Right: <6652.100.0>
+Setting Neighbours for <6652.100.0>, Left: <6652.101.0>, Right: <6652.99.0>
+Setting Neighbours for <6652.99.0>, Left: <6652.100.0>, Right: <6652.98.0>
+Setting Neighbours for <6652.98.0>, Left: <6652.99.0>, Right: <6652.97.0>
+Setting Neighbours for <6652.97.0>, Left: <6652.98.0>, Right: <6652.96.0>
+Setting Neighbours for <6652.96.0>, Left: <6652.97.0>, Right: <6652.95.0>
+Setting Neighbours for <6652.95.0>, Left: <6652.96.0>, Right: <6652.94.0>
+Setting Neighbours for <6652.94.0>, Left: <6652.95.0>, Right: <6652.93.0>
+Setting Neighbours for <6652.93.0>, Left: <6652.94.0>, Right: <6652.92.0>
+Setting Neighbours for <6652.92.0>, Left: <6652.93.0>, Right: <6652.91.0>
+Setting Neighbours for <6652.91.0>, Left: <6652.92.0>, Right: <6652.90.0>
+Setting Neighbours for <6652.90.0>, Left: <6652.91.0>, Right: <6652.89.0>
+Setting Neighbours for <6652.89.0>, Left: <6652.90.0>, Right: <6652.88.0>
+Setting Neighbours for <6652.88.0>, Left: <6652.89.0>, Right: <6652.87.0>
+Setting Neighbours for <6652.87.0>, Left: <6652.88.0>, Right: <6652.86.0>
+Setting Neighbours for <6652.86.0>, Left: <6652.87.0>, Right: <6652.85.0>
+Setting Neighbours for <6652.85.0>, Left: <6652.86.0>, Right: <6652.84.0>
+Setting Neighbours for <6652.84.0>, Left: <6652.85.0>, Right: <6652.83.0>
+Setting Neighbours for <6652.83.0>, Left: <6652.84.0>, Right: <6652.82.0>
+Setting Neighbours for <6652.82.0>, Left: <6652.83.0>, Right: <6652.81.0>
+Setting Neighbours for <6652.81.0>, Left: <6652.82.0>, Right: <6652.80.0>
+Setting Neighbours for <6652.80.0>, Left: <6652.81.0>, Right: <6652.79.0>
+Setting Neighbours for <6652.79.0>, Left: <6652.80.0>, Right: <6652.78.0>
+Setting Neighbours for <6652.78.0>, Left: <6652.79.0>, Right: <6652.77.0>
+Setting Neighbours for <6652.77.0>, Left: <6652.78.0>, Right: <6652.76.0>
+Setting Neighbours for <6652.76.0>, Left: <6652.77.0>, Right: <6652.75.0>
+Setting Neighbours for <6652.75.0>, Left: <6652.76.0>, Right: <6652.74.0>
+Setting Neighbours for <6652.74.0>, Left: <6652.75.0>, Right: <6652.73.0>
+Setting Neighbours for <6652.73.0>, Left: <6652.74.0>, Right: <6652.72.0>
+Setting Neighbours for <6652.72.0>, Left: <6652.73.0>, Right: <6652.71.0>
+Setting Neighbours for <6652.71.0>, Left: <6652.72.0>, Right: <6652.70.0>
+Setting Neighbours for <6652.70.0>, Left: <6652.71.0>, Right: <6652.69.0>
+Setting Neighbours for <6652.69.0>, Left: <6652.70.0>, Right: <6652.68.0>
+Setting Neighbours for <6652.68.0>, Left: <6652.69.0>, Right: <6652.67.0>
+Setting Neighbours for <6652.67.0>, Left: <6652.68.0>, Right: <6652.66.0>
+Setting Neighbours for <6652.66.0>, Left: <6652.67.0>, Right: <6652.65.0>
+Setting Neighbours for <6652.65.0>, Left: <6652.66.0>, Right: <6652.64.0>
+Setting Neighbours for <6652.64.0>, Left: <6652.65.0>, Right: <6652.63.0>
+Setting Neighbours for <6652.63.0>, Left: <6652.64.0>, Right: <6652.62.0>
+Setting Neighbours for <6652.62.0>, Left: <6652.63.0>, Right: <6652.61.0>
+Setting Neighbours for <6652.61.0>, Left: <6652.62.0>, Right: <6652.60.0>
+Setting Neighbours for <6652.60.0>, Left: <6652.61.0>, Right: <6652.59.0>
+Setting Neighbours for <6652.59.0>, Left: <6652.60.0>, Right: <6652.58.0>
+Setting Neighbours for <6652.58.0>, Left: <6652.59.0>, Right: <6652.57.0>
+Setting Neighbours for <6652.57.0>, Left: <6652.58.0>, Right: <6652.56.0>
+Setting Neighbours for <6652.56.0>, Left: <6652.57.0>, Right: <6652.55.0>
+Setting Neighbours for <6652.55.0>, Left: <6652.56.0>, Right: <6652.54.0>
+Setting Neighbours for <6652.54.0>, Left: <6652.55.0>, Right: <6652.53.0>
+Setting Neighbours for <6652.53.0>, Left: <6652.54.0>, Right: <6652.52.0>
+Setting Neighbours for <6652.52.0>, Left: <6652.53.0>, Right: <6652.51.0>
+Setting Neighbours for <6652.51.0>, Left: <6652.52.0>, Right: <6652.50.0>
+Setting Neighbours for <6652.50.0>, Left: <6652.51.0>, Right: <6652.49.0>
+Setting Neighbours for <6652.49.0>, Left: <6652.50.0>, Right: <6652.48.0>
+Setting Neighbours for <6652.48.0>, Left: <6652.49.0>, Right: <6652.42.0>
+Setting Neighbours for <6652.42.0>, Left: <6652.48.0>, Right: <6652.43.0>
+Setting Neighbours for <6652.43.0>, Left: <6652.42.0>, Right: <6652.44.0>
+Setting Neighbours for <6652.44.0>, Left: <6652.43.0>, Right: <6652.45.0>
+Setting Neighbours for <6652.45.0>, Left: <6652.44.0>, Right: <6652.47.0>
+Setting Neighbours for <6652.47.0>, Left: <6652.45.0>, Right: <6652.46.0>
+Setting Neighbours for <6652.46.0>, Left: <6652.47.0>, Right: <6652.41.0>
+Setting Neighbours for <6652.41.0>, Left: <6652.46.0>, Right: <6648.149.0>
+Setting Neighbours for <6648.149.0>, Left: <6652.41.0>, Right: <6648.148.0>
+Setting Neighbours for <6648.148.0>, Left: <6648.149.0>, Right: <6648.147.0>
+Setting Neighbours for <6648.147.0>, Left: <6648.148.0>, Right: <6648.146.0>
+Setting Neighbours for <6648.146.0>, Left: <6648.147.0>, Right: <6648.145.0>
+Setting Neighbours for <6648.145.0>, Left: <6648.146.0>, Right: <6648.144.0>
+Setting Neighbours for <6648.144.0>, Left: <6648.145.0>, Right: <6648.143.0>
+Setting Neighbours for <6648.143.0>, Left: <6648.144.0>, Right: <6648.142.0>
+Setting Neighbours for <6648.142.0>, Left: <6648.143.0>, Right: <6648.141.0>
+Setting Neighbours for <6648.141.0>, Left: <6648.142.0>, Right: <6648.140.0>
+Setting Neighbours for <6648.140.0>, Left: <6648.141.0>, Right: <6648.139.0>
+Setting Neighbours for <6648.139.0>, Left: <6648.140.0>, Right: <6648.138.0>
+Setting Neighbours for <6648.138.0>, Left: <6648.139.0>, Right: <6648.137.0>
+Setting Neighbours for <6648.137.0>, Left: <6648.138.0>, Right: <6648.136.0>
+Setting Neighbours for <6648.136.0>, Left: <6648.137.0>, Right: <6648.135.0>
+Setting Neighbours for <6648.135.0>, Left: <6648.136.0>, Right: <6648.134.0>
+Setting Neighbours for <6648.134.0>, Left: <6648.135.0>, Right: <6648.133.0>
+Setting Neighbours for <6648.133.0>, Left: <6648.134.0>, Right: <6648.132.0>
+Setting Neighbours for <6648.132.0>, Left: <6648.133.0>, Right: <6648.131.0>
+Setting Neighbours for <6648.131.0>, Left: <6648.132.0>, Right: <6648.130.0>
+Setting Neighbours for <6648.130.0>, Left: <6648.131.0>, Right: <6648.129.0>
+Setting Neighbours for <6648.129.0>, Left: <6648.130.0>, Right: <6648.128.0>
+Setting Neighbours for <6648.128.0>, Left: <6648.129.0>, Right: <6648.127.0>
+Setting Neighbours for <6648.127.0>, Left: <6648.128.0>, Right: <6648.126.0>
+Setting Neighbours for <6648.126.0>, Left: <6648.127.0>, Right: <6648.125.0>
+Setting Neighbours for <6648.125.0>, Left: <6648.126.0>, Right: <6648.124.0>
+Setting Neighbours for <6648.124.0>, Left: <6648.125.0>, Right: <6648.123.0>
+Setting Neighbours for <6648.123.0>, Left: <6648.124.0>, Right: <6648.122.0>
+Setting Neighbours for <6648.122.0>, Left: <6648.123.0>, Right: <6648.121.0>
+Setting Neighbours for <6648.121.0>, Left: <6648.122.0>, Right: <6648.120.0>
+Setting Neighbours for <6648.120.0>, Left: <6648.121.0>, Right: <6648.119.0>
+Setting Neighbours for <6648.119.0>, Left: <6648.120.0>, Right: <6648.118.0>
+Setting Neighbours for <6648.118.0>, Left: <6648.119.0>, Right: <6648.117.0>
+Setting Neighbours for <6648.117.0>, Left: <6648.118.0>, Right: <6648.116.0>
+Setting Neighbours for <6648.116.0>, Left: <6648.117.0>, Right: <6648.115.0>
+Setting Neighbours for <6648.115.0>, Left: <6648.116.0>, Right: <6648.114.0>
+Setting Neighbours for <6648.114.0>, Left: <6648.115.0>, Right: <6648.113.0>
+Setting Neighbours for <6648.113.0>, Left: <6648.114.0>, Right: <6648.112.0>
+Setting Neighbours for <6648.112.0>, Left: <6648.113.0>, Right: <6648.111.0>
+Setting Neighbours for <6648.111.0>, Left: <6648.112.0>, Right: <6648.110.0>
+Setting Neighbours for <6648.110.0>, Left: <6648.111.0>, Right: <6648.109.0>
+Setting Neighbours for <6648.109.0>, Left: <6648.110.0>, Right: <6648.108.0>
+Setting Neighbours for <6648.108.0>, Left: <6648.109.0>, Right: <6648.107.0>
+Setting Neighbours for <6648.107.0>, Left: <6648.108.0>, Right: <6648.106.0>
+Setting Neighbours for <6648.106.0>, Left: <6648.107.0>, Right: <6648.105.0>
+Setting Neighbours for <6648.105.0>, Left: <6648.106.0>, Right: <6648.104.0>
+Setting Neighbours for <6648.104.0>, Left: <6648.105.0>, Right: <6648.103.0>
+Setting Neighbours for <6648.103.0>, Left: <6648.104.0>, Right: <6648.102.0>
+Setting Neighbours for <6648.102.0>, Left: <6648.103.0>, Right: <6648.101.0>
+Setting Neighbours for <6648.101.0>, Left: <6648.102.0>, Right: <6648.100.0>
+Setting Neighbours for <6648.100.0>, Left: <6648.101.0>, Right: <6648.99.0>
+Setting Neighbours for <6648.99.0>, Left: <6648.100.0>, Right: <6648.98.0>
+Setting Neighbours for <6648.98.0>, Left: <6648.99.0>, Right: <6648.97.0>
+Setting Neighbours for <6648.97.0>, Left: <6648.98.0>, Right: <6648.96.0>
+Setting Neighbours for <6648.96.0>, Left: <6648.97.0>, Right: <6648.95.0>
+Setting Neighbours for <6648.95.0>, Left: <6648.96.0>, Right: <6648.94.0>
+Setting Neighbours for <6648.94.0>, Left: <6648.95.0>, Right: <6648.93.0>
+Setting Neighbours for <6648.93.0>, Left: <6648.94.0>, Right: <6648.92.0>
+Setting Neighbours for <6648.92.0>, Left: <6648.93.0>, Right: <6648.91.0>
+Setting Neighbours for <6648.91.0>, Left: <6648.92.0>, Right: <6648.90.0>
+Setting Neighbours for <6648.90.0>, Left: <6648.91.0>, Right: <6648.89.0>
+Setting Neighbours for <6648.89.0>, Left: <6648.90.0>, Right: <6648.88.0>
+Setting Neighbours for <6648.88.0>, Left: <6648.89.0>, Right: <6648.87.0>
+Setting Neighbours for <6648.87.0>, Left: <6648.88.0>, Right: <6648.86.0>
+Setting Neighbours for <6648.86.0>, Left: <6648.87.0>, Right: <6648.85.0>
+Setting Neighbours for <6648.85.0>, Left: <6648.86.0>, Right: <6648.84.0>
+Setting Neighbours for <6648.84.0>, Left: <6648.85.0>, Right: <6648.83.0>
+Setting Neighbours for <6648.83.0>, Left: <6648.84.0>, Right: <6648.82.0>
+Setting Neighbours for <6648.82.0>, Left: <6648.83.0>, Right: <6648.81.0>
+Setting Neighbours for <6648.81.0>, Left: <6648.82.0>, Right: <6648.80.0>
+Setting Neighbours for <6648.80.0>, Left: <6648.81.0>, Right: <6648.79.0>
+Setting Neighbours for <6648.79.0>, Left: <6648.80.0>, Right: <6648.78.0>
+Setting Neighbours for <6648.78.0>, Left: <6648.79.0>, Right: <6648.77.0>
+Setting Neighbours for <6648.77.0>, Left: <6648.78.0>, Right: <6648.76.0>
+Setting Neighbours for <6648.76.0>, Left: <6648.77.0>, Right: <6648.75.0>
+Setting Neighbours for <6648.75.0>, Left: <6648.76.0>, Right: <6648.74.0>
+Setting Neighbours for <6648.74.0>, Left: <6648.75.0>, Right: <6648.73.0>
+Setting Neighbours for <6648.73.0>, Left: <6648.74.0>, Right: <6648.72.0>
+Setting Neighbours for <6648.72.0>, Left: <6648.73.0>, Right: <6648.71.0>
+Setting Neighbours for <6648.71.0>, Left: <6648.72.0>, Right: <6648.70.0>
+Setting Neighbours for <6648.70.0>, Left: <6648.71.0>, Right: <6648.69.0>
+Setting Neighbours for <6648.69.0>, Left: <6648.70.0>, Right: <6648.68.0>
+Setting Neighbours for <6648.68.0>, Left: <6648.69.0>, Right: <6648.67.0>
+Setting Neighbours for <6648.67.0>, Left: <6648.68.0>, Right: <6648.66.0>
+Setting Neighbours for <6648.66.0>, Left: <6648.67.0>, Right: <6648.65.0>
+Setting Neighbours for <6648.65.0>, Left: <6648.66.0>, Right: <6648.64.0>
+Setting Neighbours for <6648.64.0>, Left: <6648.65.0>, Right: <6648.63.0>
+Setting Neighbours for <6648.63.0>, Left: <6648.64.0>, Right: <6648.62.0>
+Setting Neighbours for <6648.62.0>, Left: <6648.63.0>, Right: <6648.61.0>
+Setting Neighbours for <6648.61.0>, Left: <6648.62.0>, Right: <6648.60.0>
+Setting Neighbours for <6648.60.0>, Left: <6648.61.0>, Right: <6648.59.0>
+Setting Neighbours for <6648.59.0>, Left: <6648.60.0>, Right: <6648.58.0>
+Setting Neighbours for <6648.58.0>, Left: <6648.59.0>, Right: <6648.57.0>
+Setting Neighbours for <6648.57.0>, Left: <6648.58.0>, Right: <6648.56.0>
+Setting Neighbours for <6648.56.0>, Left: <6648.57.0>, Right: <6648.55.0>
+Setting Neighbours for <6648.55.0>, Left: <6648.56.0>, Right: <6648.54.0>
+Setting Neighbours for <6648.54.0>, Left: <6648.55.0>, Right: <6648.53.0>
+Setting Neighbours for <6648.53.0>, Left: <6648.54.0>, Right: <6648.52.0>
+Setting Neighbours for <6648.52.0>, Left: <6648.53.0>, Right: <6648.51.0>
+Setting Neighbours for <6648.51.0>, Left: <6648.52.0>, Right: <6648.50.0>
+Setting Neighbours for <6648.50.0>, Left: <6648.51.0>, Right: <6648.43.0>
+Setting Neighbours for <6648.43.0>, Left: <6648.50.0>, Right: <6648.49.0>
+Setting Neighbours for <6648.49.0>, Left: <6648.43.0>, Right: <6648.47.0>
+Setting Neighbours for <6648.47.0>, Left: <6648.49.0>, Right: <6648.45.0>
+Setting Neighbours for <6648.45.0>, Left: <6648.47.0>, Right: <6648.42.0>
+Setting Neighbours for <6648.42.0>, Left: <6648.45.0>, Right: <6648.41.0>
+Setting Neighbours for <6648.41.0>, Left: <6648.42.0>, Right: <6648.46.0>
+Setting Neighbours for <6648.46.0>, Left: <6648.41.0>, Right: <6648.44.0>
+Setting Neighbours for <6648.44.0>, Left: <6652.211.0>, Right: <6648.48.0>
+
+=ERROR REPORT==== 2-Jun-2011::18:49:11 ===
+** System running to use fully qualified hostnames **
+** Hostname localhost is illegal **
+
+=ERROR REPORT==== 2-Jun-2011::18:49:11 ===
+** System running to use fully qualified hostnames **
+** Hostname localhost is illegal **
+[184912] Got new Mi from 731731291: 148356
+[184913] Got new Mi from 731731292: 16146
+[184913] Got new Mi from 731731293: 9594
+[184913] Got new Mi from 731731291: 3042
+[184913] Got new Mi from 731731290: 468
+[184913] Got new Mi from 731731292: 6552
+[184913] Got new Mi from 731731294: 3744
+[184914] Got new Mi from 731731289: 234
+[184914] Got new Mi from 731731291: 234
+[184914] Got new Mi from 731731295: 3744
+[184914] Got new Mi from 731731292: 468
+[184914] Got new Mi from 731731293: 3042
+[184914] Got new Mi from 731731296: 3744
+[184914] Got new Mi from 731731290: 234
+[184914] Got new Mi from 731731288: 234
+[184914] Got new Mi from 731731292: 234
+[184914] Got new Mi from 731731293: 234
+[184914] Got new Mi from 731731294: 702
+[184914] Got new Mi from 731731287: 234
+[184914] Got new Mi from 731731297: 1872
+[184915] Got new Mi from 731731298: 468
+[184915] Got new Mi from 731731296: 1872
+[184915] Got new Mi from 731731286: 234
+[184915] Got new Mi from 731731295: 234
+[184915] Got new Mi from 731731294: 234
+[184915] Got new Mi from 731731299: 468
+[184915] Got new Mi from 731731296: 234
+[184915] Got new Mi from 731731285: 234
+[184915] Got new Mi from 731731297: 468
+[184915] Got new Mi from 7317312100: 468
+[184915] Got new Mi from 731731284: 234
+[184915] Got new Mi from 7317312101: 468
+[184915] Got new Mi from 731731297: 234
+[184915] Got new Mi from 731731283: 234
+[184916] Got new Mi from 7317312102: 468
+[184916] Got new Mi from 731731298: 234
+[184916] Got new Mi from 731731282: 234
+[184916] Got new Mi from 7317312103: 468
+[184916] Got new Mi from 731731281: 234
+[184916] Got new Mi from 731731299: 234
+[184916] Got new Mi from 7317312104: 468
+[184916] Got new Mi from 731731280: 234
+[184916] Got new Mi from 7317312100: 234
+[184917] Got new Mi from 7317312105: 234
+[184917] Got new Mi from 731731279: 234
+[184917] Got new Mi from 7317312101: 234
+[184917] Got new Mi from 7317312104: 234
+[184917] Got new Mi from 7317312106: 234
+[184917] Got new Mi from 731731278: 234
+[184917] Got new Mi from 7317312102: 234
+[184917] Got new Mi from 7317312107: 234
+[184917] Got new Mi from 7317312103: 234
+[184917] Got new Mi from 731731277: 234
+[184917] Got new Mi from 7317312108: 234
+[184917] Got new Mi from 731731276: 234
+[184918] Got new Mi from 7317312109: 234
+[184918] Got new Mi from 731731275: 234
+[184918] Got new Mi from 7317312110: 234
+[184918] Got new Mi from 731731274: 234
+[184918] Got new Mi from 7317312111: 234
+[184918] Got new Mi from 731731273: 234
+[184919] Got new Mi from 7317312112: 234
+[184919] Got new Mi from 731731272: 234
+[184919] Got new Mi from 7317312113: 234
+[184919] Got new Mi from 731731271: 234
+[184919] Got new Mi from 7317312114: 234
+[184919] Got new Mi from 731731270: 234
+[184920] Got new Mi from 7317312115: 234
+[184920] Got new Mi from 731731269: 234
+[184920] Got new Mi from 7317312116: 234
+[184920] Got new Mi from 731731268: 234
+[184920] Got new Mi from 7317312117: 234
+[184920] Got new Mi from 731731267: 234
+[184920] Got new Mi from 7317312118: 234
+[184920] Got new Mi from 731731266: 234
+[184921] Got new Mi from 7317312119: 234
+[184921] Got new Mi from 731731264: 234
+[184921] Got new Mi from 7317312120: 234
+[184921] Got new Mi from 731731265: 234
+[184921] Got result from 73173125: 343980
+[184921] Got result from 73173127: 236808
+[184921] Got result from 73173128: 10062
+[184921] Got result from 73173122: 752544
+[184921] Got result from 73173124: 210600
+[184921] Got result from 73173123: 381888
+[184921] Got result from 731731211: 81432
+[184921] Got result from 731731214: 83304
+[184921] Got result from 731731215: 1631448
+[184921] Got result from 731731218: 3510
+[184921] Got result from 731731216: 200772
+[184921] Got result from 731731223: 1104480
+[184921] Got result from 731731225: 767520
+[184921] Got result from 731731219: 138996
+[184921] Got result from 731731224: 505440
+[184921] Got result from 731731229: 385398
+[184921] Got result from 731731227: 954720
+[184921] Got result from 731731220: 813618
+[184921] Got result from 731731226: 74880
+[184921] Got result from 731731221: 611442
+[184921] Got result from 731731252: 1044576
+[184921] Got result from 731731253: 1493856
+[184921] Got result from 731731241: 1697436
+[184921] Got result from 731731243: 32292
+[184921] Got result from 731731242: 222768
+[184921] Got result from 731731247: 589680
+[184921] Got result from 731731248: 5616
+[184921] Got result from 731731244: 1325376
+[184921] Got result from 731731245: 696384
+[184921] Got result from 731731238: 289926
+[184921] Got result from 731731239: 32760
+[184921] Got result from 731731250: 60372
+[184921] Got result from 731731260: 91728
+[184921] Got result from 731731261: 320112
+[184921] Got result from 7317312127: 1048320
+[184921] Got result from 7317312135: 1015560
+[184921] Got result from 7317312134: 91494
+[184921] Got result from 7317312130: 1009008
+[184921] Got result from 7317312125: 606528
+[184921] Got result from 7317312128: 581256
+[184921] Got result from 7317312124: 576576
+[184921] Got result from 7317312123: 40014
+[184921] Got result from 7317312129: 1999296
+[184921] Got result from 7317312133: 383760
+[184921] Got result from 7317312122: 301392
+[184921] Got result from 7317312153: 1090908
+[184921] Got result from 7317312165: 47970
+[184921] Got result from 7317312142: 63648
+[184921] Got result from 7317312146: 224640
+[184921] Got result from 7317312166: 529308
+[184921] Got result from 7317312172: 145782
+[184921] Got result from 7317312141: 943488
+[184921] Got result from 7317312171: 453024
+[184921] Got result from 7317312144: 44226
+[184921] Got result from 7317312155: 561834
+[184921] Got result from 7317312138: 112320
+[184921] Got result from 7317312140: 97110
+[184921] Got result from 7317312154: 815724
+[184921] Got result from 7317312143: 415350
+[184921] Got result from 7317312160: 452088
+[184921] Got result from 7317312161: 103428
+[184921] Got result from 7317312162: 37908
+[184921] Got result from 7317312139: 19890
+[184921] Got result from 7317312156: 505908
+[184921] Got result from 7317312159: 298584
+[184921] Got result from 731091211: 137592
+[184921] Got result from 73109126: 217152
+[184921] Got result from 73109125: 132678
+[184921] Got result from 73109123: 1770210
+[184921] Got result from 73109124: 1362348
+[184921] Got result from 731091212: 113490
+[184921] Got result from 73109122: 1316016
+[184921] Got result from 731091210: 842166
+[184921] Got result from 731091229: 20592
+[184921] Got result from 731091227: 30420
+[184921] Got result from 731091226: 19656
+[184921] Got result from 731091228: 204984
+[184921] Got result from 731091225: 111150
+[184921] Got result from 731091224: 1042002
+[184921] Got result from 731091222: 152334
+[184921] Got result from 731091223: 1339182
+[184921] Got result from 731091220: 111384
+[184921] Got result from 731091221: 719550
+[184921] Got new Mi from 7317312121: 234
+[184921] Got new Mi from 731731263: 234
+[184921] Got result from 73109128: 15210
+[184921] Got result from 731091214: 194688
+[184921] Got result from 731091219: 553410
+[184921] Got result from 73109127: 15444
+[184921] Got result from 731091213: 315666
+[184921] Got result from 731091216: 673920
+[184921] Got result from 731091218: 391950
+[184921] Got result from 731091239: 111384
+[184921] Got result from 731091237: 261144
+[184921] Got result from 731091235: 355446
+[184921] Got result from 731091236: 3744
+[184921] Got result from 731091232: 62478
+[184921] Got result from 731091233: 415584
+[184921] Got result from 731091257: 1269918
+[184921] Got result from 731091258: 628992
+[184921] Got result from 731091251: 362232
+[184921] Got result from 731091250: 235872
+[184921] Got result from 731091249: 314496
+[184921] Got result from 731091248: 40014
+[184921] Got result from 731091247: 27378
+[184921] Got result from 731091246: 163800
+[184921] Got result from 731091245: 875160
+[184921] Got result from 731091244: 181818
+[184921] Got result from 731091243: 994500
+[184921] Got result from 731091259: 845208
+[184921] Got result from 731091242: 1061424
+[184921] Got result from 731091283: 77220
+[184921] Got result from 731091284: 2247336
+[184921] Got result from 731091273: 546624
+[184921] Got result from 731091277: 281736
+[184921] Got result from 731091274: 1017900
+[184921] Got result from 731091275: 191646
+[184921] Got result from 731091267: 1554462
+[184921] Got result from 731091281: 202176
+[184921] Got result from 731091268: 912600
+[184921] Got result from 731091279: 1806246
+[184921] Got result from 731091269: 1196208
+[184921] Got result from 731091270: 168480
+[184921] Got result from 731091271: 224640
+[184921] Got result from 731091265: 606528
+[184921] Got result from 731091263: 196560
+[184921] Got result from 731091254: 126360
+[184921] Got result from 731091255: 292032
+[184921] Got result from 731091287: 600210
+[184921] Got result from 731091288: 291564
+[184921] Got result from 7310912104: 422604
+[184921] Got result from 7310912107: 34632
+[184921] Got result from 731091292: 137592
+[184921] Got result from 731091290: 1177488
+[184921] Got result from 731091291: 720252
+[184921] Got result from 731091294: 803088
+[184921] Got result from 731091297: 644436
+[184921] Got result from 731091298: 574938
+[184921] Got result from 731091299: 17784
+[184921] Got result from 7310912101: 1869660
+[184921] Got result from 7310912103: 221364
+[184921] Got result from 7310912105: 131040
+[184921] Got result from 7310912108: 1490580
+[184921] Got result from 731091296: 88920
+[184921] Got result from 731091295: 389610
+[184921] Got result from 731091293: 115128
+[184921] Got result from 731091289: 546624
+[184925] Got result from 731731288: 234
+[184925] Got result from 731731286: 234
+[184926] Got result from 731731284: 234
+[184926] Got result from 731731282: 234
+[184927] Got result from 731731280: 234
+[184927] Got result from 7317312104: 234
+[184927] Got result from 7317312105: 234
+[184927] Got result from 7317312102: 234
+[184927] Got result from 731731278: 234
+[184928] Got result from 731731276: 234
+[184929] Got result from 731731274: 234
+[184929] Got result from 731731272: 234
+[184930] Got result from 731731270: 234
+[184930] Got result from 731731268: 234
+[184931] Got result from 731731266: 234
+[184931] Got result from 73173129: 640224
+[184931] Got result from 731731212: 787644
+[184931] Got result from 731731233: 29016
+[184931] Got result from 731731236: 549666
+[184931] Got result from 731731254: 2111850
+[184931] Got result from 7317312131: 190008
+[184931] Got result from 7317312136: 4212
+[184931] Got result from 7317312148: 1171170
+[184931] Got result from 7317312169: 339300
+[184931] Got result from 7317312157: 113022
+[184931] Got result from 7317312147: 1493856
+[184931] Got result from 7317312163: 1778400
+[184931] Got result from 7317312151: 419328
+[184931] Got result from 731091230: 135720
+[184931] Got result from 731091240: 620568
+[184931] Got result from 731091260: 1700712
+[184931] Got result from 731091261: 151632
+[184931] Got result from 731091252: 778752
+[184931] Got result from 731091285: 4680
+[184931] Got result from 7310912106: 631800
+[184931] Got result from 7317312173: 303264
+[184932] Got result from 7317312120: 234
+[184932] Got result from 731731265: 234
+[184935] Got result from 731731289: 234
+[184937] Got result from 7317312106: 234
+[184941] Got result from 731731257: 411840
+[184941] Got result from 731731255: 28080
+[184941] Got result from 731731256: 1010880
+[184941] Got result from 731731258: 580320
+[184945] Got result from 731731290: 234
+[184946] Got result from 7317312100: 234
+[184947] Got result from 7317312107: 234
+[184950] Got result from 7317312118: 234
+[184955] Got result from 731731291: 234
+[184957] Got result from 7317312108: 234

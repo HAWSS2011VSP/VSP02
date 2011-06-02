@@ -23,8 +23,9 @@ public class Coordinator {
   protected final OtpErlangPid logger;
 
   public Coordinator(final String remoteNodeAddress, final OtpErlangPid logger) throws IOException {
-    this.remoteNodeAddress = remoteNodeAddress;
-    this.self = new OtpNode("gui", "foo");
+    this.remoteNodeAddress = "coordinator@10.0.1.101";
+    this.self = new OtpNode("gui@10.0.1.101", "foo");
+    System.out.println(self.node());
     this.mbox = self.createMbox();
     this.logger = logger;
   }

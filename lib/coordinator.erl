@@ -2,7 +2,7 @@
 -export([start/0]).
 
 start() ->
-  net_kernel:start([coordinator, shortnames]),
+  net_kernel:start([node()]),
   erlang:nodes(visible),
   process_flag(trap_exit, true),
   register(coordinator, self()),
@@ -12,11 +12,11 @@ start() ->
 preInitial(Values) ->
   receive
     {PID, setvalues, NewValues} ->
-      io:format("Got some values.~n", []),
-      PID ! "Received values.",
+      io:format("Got some values from ~w.~n", [PID]),
+      %PID ! "Received values.",
       preInitial(NewValues);
     {PID, setinitial} ->
-      PID ! "Setting state to initial.",
+      %PID ! "Setting state to initial.",
       io:format("Initialized.~n", []),
       initial(Values, [])
   end.
@@ -40,7 +40,7 @@ initial({ProcCountFrom, ProcCountTo, WTimeFrom, WTimeTo, Timeout, Ggt}, Procs) -
       PID ! "Starting calculation.",
       timer:sleep(1000),
       startGgt(Procs, Ggt),
-      waitForResult(PID, Procs, Ggt);
+      waitForResult(self(), Procs, Ggt);
     Msg ->
       io:format("Did not understand ~w.~n", [Msg]),
       initial({ProcCountFrom, ProcCountTo, WTimeFrom, WTimeTo, Timeout, Ggt}, Procs)
@@ -53,16 +53,17 @@ buildRing(Procs) ->
 buildRing([], _Recent, _Procs2) ->
   done;
 buildRing([Proc, Right | []], Recent, Procs2) ->
-  io:format("Ring 3~n", []),
+  Left = lists:last(Procs2),
+  io:format("Setting Neighbours for ~w, Left: ~w, Right: ~w~n", [Proc, Left, Right]),
   Proc ! {setneighbours, {Recent, Right}},
-  Right ! {setneighbours, {Proc, lists:last(Procs2)}},
+  Right ! {setneighbours, {Proc, Left}},
   buildRing([], Proc, [ Right, Proc | Procs2]);
 buildRing([Proc, Right | Rest], Recent, []) ->
-  io:format("Ring 1~n", []),
+  io:format("Setting Neighbours for ~w, Left: ~w, Right: ~w~n", [Proc, Recent, Right]),
   Proc ! {setneighbours, {Recent, Right}},
   buildRing([Right | Rest], Proc, [Proc]);
 buildRing([Proc, Right | Rest], Recent, Procs2) ->
-  io:format("Ring 2~n", []),
+  io:format("Setting Neighbours for ~w, Left: ~w, Right: ~w~n", [Proc, Recent, Right]),
   Proc ! {setneighbours, {Recent, Right}},
   buildRing([Right | Rest], Proc, [Proc | Procs2]);
 buildRing(Procs, Recent, Procs2) ->
@@ -88,14 +89,13 @@ waitForResult(Logger, Procs, Ggt) ->
   receive
     {newvalue, {Pid, Name, Mi, Time}} ->
       io:format("[~w] Got new Mi from ~s: ~w~n", [Time, Name, Mi]),
-      Logger ! utils:mkString("", ["[", Time, "] Got new Mi from ", Name, ": ", Mi]),
       waitForResult(Logger, Procs, Ggt);
     {result, {Pid, Name, Result, Time}} ->
       io:format("[~w] Got result from ~s: ~w~n", [Time, Name, Result]),
-      Logger ! utils:mkString("", ["Got Result: ", Result]),
+      %Logger ! utils:mkString("", ["Got Result: ", Result]),
       waitForResult(Logger, Procs, Ggt);
     {ready, {Name}} ->
-      Logger ! utils:mkString("", [Name, " is ready to take new values."]),
+      %Logger ! utils:mkString("", [Name, " is ready to take new values."]),
       waitForResult(Logger, Procs, Ggt);
     {Pid, setready} ->
       startGgt(Procs, Ggt),

@@ -1,5 +1,5 @@
 #!/usr/bin/env escript
-%%! -sname starter@localhost -setcookie foo
+%%! -name starter@10.0.1.101 -setcookie foo
 
 main(_Args) ->
-  starter:start(coordinator@localhost, 7, 3, 12).
+  starter:start('coordinator@10.0.1.101', 7, 3, 12).
