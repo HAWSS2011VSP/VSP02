@@ -1,9 +1,0 @@
-#!/usr/bin/env escript
-%%! -sname guimock -setcookie foo
-
-main(_Args) ->
-  Coordinator = {coordinator, coordinator@localhost},
-  net_kernel:connect_node(coordinator@localhost),
-  Coordinator ! {setvalues, {3,7,500,1000, 5000, 42}},
-  timer:sleep(500),
-  Coordinator ! {setinitial}.

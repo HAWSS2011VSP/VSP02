@@ -2,48 +2,44 @@
 -export([start/0]).
 
 start() ->
-  net_kernel:start([node()]),
   erlang:nodes(visible),
   process_flag(trap_exit, true),
-  register(coordinator, self()),
+  Config = config:read('koordinator.cfg'),
+  register(config:get('koordinatorname', Config), self()),
+  net_adm:ping(config:get('nameservicenode', Config)),
+  Nameservice = global:whereis_name('nameservice'),
+  register('nameservice', Nameservice),
   io:format("Coordinator running...~n", []),
-  preInitial({}).
+  preInitial(Config).
 
-preInitial(Values) ->
-  receive
-    {PID, setvalues, NewValues} ->
-      io:format("Got some values from ~w.~n", [PID]),
-      %PID ! "Received values.",
-      preInitial(NewValues);
-    {PID, setinitial} ->
-      %PID ! "Setting state to initial.",
-      io:format("Initialized.~n", []),
-      initial(Values, [])
-  end.
-
-initial({ProcCountFrom, ProcCountTo, WTimeFrom, WTimeTo, Timeout, Ggt}, Procs) ->
+preInitial(Config) ->
   receive
     {PID, getsteeringval} ->
       io:format("Sending steering vals.~n", []),
-      PID ! {ok, {rand(ProcCountFrom, ProcCountTo), rand(WTimeFrom, WTimeTo), Timeout}},
-      initial({ProcCountFrom, ProcCountTo, WTimeFrom, WTimeTo, Timeout, Ggt}, Procs);
-    {hello, {PID, Name}} ->
+      PID ! {steeringval,
+             config:get('arbeitszeit', Config),
+             config:get('termzeit', Config),
+             config:get('ggtprozessnummer', Config)},
+      preInitial(Config);
+    setinitial ->
+      io:format("Initialized.~n", []),
+      initial(Config, [])
+  end.
+
+initial(Config, Procs) ->
+  receive
+    {hello, Name} ->
       io:format("GCD process ~s said hello.~n", [Name]),
-      PID ! {ok},
-      initial({ProcCountFrom, ProcCountTo, WTimeFrom, WTimeTo, Timeout, Ggt}, [PID|Procs]);
-    {PID, setready} ->
-      PID ! "Building ring.",
+      initial(Config, [Name|Procs]);
+    setready ->
       io:format("Building ring.~n", []),
       buildRing(Procs),
-      PID ! "Setting start values.",
+      {ok, [Ggt]} = io:fread("Gewuenschter GGT: ", "~d"),
       setStartValues(Procs, Ggt),
-      PID ! "Starting calculation.",
-      timer:sleep(1000),
-      startGgt(Procs, Ggt),
-      waitForResult(self(), Procs, Ggt);
+      waitForResult(Config, Procs, Ggt);
     Msg ->
       io:format("Did not understand ~w.~n", [Msg]),
-      initial({ProcCountFrom, ProcCountTo, WTimeFrom, WTimeTo, Timeout, Ggt}, Procs)
+      initial(Config, Procs)
   end.
 
 buildRing(Procs) ->
@@ -55,16 +51,16 @@ buildRing([], _Recent, _Procs2) ->
 buildRing([Proc, Right | []], Recent, Procs2) ->
   Left = lists:last(Procs2),
   io:format("Setting Neighbours for ~w, Left: ~w, Right: ~w~n", [Proc, Left, Right]),
-  Proc ! {setneighbours, {Recent, Right}},
-  Right ! {setneighbours, {Proc, Left}},
+  Proc ! {setneighbors, Recent, Right},
+  Right ! {setneighbors, Proc, Left},
   buildRing([], Proc, [ Right, Proc | Procs2]);
 buildRing([Proc, Right | Rest], Recent, []) ->
   io:format("Setting Neighbours for ~w, Left: ~w, Right: ~w~n", [Proc, Recent, Right]),
-  Proc ! {setneighbours, {Recent, Right}},
+  Proc ! {setneighbours, Recent, Right},
   buildRing([Right | Rest], Proc, [Proc]);
 buildRing([Proc, Right | Rest], Recent, Procs2) ->
   io:format("Setting Neighbours for ~w, Left: ~w, Right: ~w~n", [Proc, Recent, Right]),
-  Proc ! {setneighbours, {Recent, Right}},
+  Proc ! {setneighbours, Recent, Right},
   buildRing([Right | Rest], Proc, [Proc | Procs2]);
 buildRing(Procs, Recent, Procs2) ->
   io:format("Something shitty... ~w ~w ~w~n", [Procs, Recent, Procs2]).
@@ -75,34 +71,34 @@ setStartValues([PID | Rest], Ggt) ->
   PID ! {setinitial, {Ggt * rand(1,100) * rand(1,100)}},
   setStartValues(Rest, Ggt).
 
-startGgt(Procs, Ggt) ->
-  startGgt(Procs, Ggt, 3).
-
-startGgt(_Procs, _Ggt, 0) ->
-  done;
-startGgt(Procs, Ggt, Counter) ->
-  Pid = lists:nth(rand(1, length(Procs)), Procs),
-  Pid ! {gcd, {Ggt * rand(100, 10000)}},
-  startGgt(lists:delete(Pid, Procs), Ggt, Counter-1).
-
-waitForResult(Logger, Procs, Ggt) ->
+waitForResult(Config, Procs, Ggt) ->
   receive
-    {newvalue, {Pid, Name, Mi, Time}} ->
+    {briefmi, {Name, Mi, Time}} ->
       io:format("[~w] Got new Mi from ~s: ~w~n", [Time, Name, Mi]),
-      waitForResult(Logger, Procs, Ggt);
-    {result, {Pid, Name, Result, Time}} ->
+      waitForResult(Config, Procs, Ggt);
+    {briefterm, {Name, Result, Time}} ->
       io:format("[~w] Got result from ~s: ~w~n", [Time, Name, Result]),
-      %Logger ! utils:mkString("", ["Got Result: ", Result]),
-      waitForResult(Logger, Procs, Ggt);
-    {ready, {Name}} ->
-      %Logger ! utils:mkString("", [Name, " is ready to take new values."]),
-      waitForResult(Logger, Procs, Ggt);
-    {Pid, setready} ->
-      startGgt(Procs, Ggt),
-      waitForResult(Logger, Procs, Ggt)
+      waitForResult(Config, Procs, Ggt);
+    'reset' ->
+      killProcs(Procs),
+      preInitial(Config);
+    'kill' ->
+      killProcs(Procs)
   end.
 
-rand(From, From) -> From;
-rand(From, To) when From < To ->
-  random:uniform(To - From + 1) + From - 1.
+killProcs(Procs) ->
+  F = fun(Proc) ->
+    getProc(Proc) ! 'kill'
+  end,
+  lists:foreach(F, Procs).
+
+getProc(Name) ->
+  nameservice ! {self(), {lookup, Name}},
+  receive
+    not_found -> nil;
+    {Name,Node} -> Node
+  end.
+
+rand(Lo,Hi) ->
+  crypto:rand_uniform(Lo, Hi).
 
