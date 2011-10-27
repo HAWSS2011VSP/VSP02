@@ -15,29 +15,25 @@
 %%
 %% API Functions
 %%
-start(ArbeitsZeit,TermZeit,IdOfGGT,StarterNummer,PraktikumsGruppenNr,TeamNummer,NamensdienstNode,KoordinatorName) ->
-	Name = string:concat(string:concat(PraktikumsGruppenNr, TeamNummer),string:concat(IdOfGGT, StarterNummer)),
-	{Namensdienst,Koordinator,Log} = connections(NamensdienstNode,KoordinatorName,Name),
-	{LeftN,RightN} = registerSelf(Namensdienst,Koordinator,Name,Log),
-	setPM(Name,ArbeitsZeit,Log,LeftN,RightN,TermZeit,Koordinator),
-	unregisterSelf(Namensdienst,Name,Log).
+start(ArbeitsZeit,TermZeit,IdOfGGT,StarterNummer,PraktikumsGruppenNr,TeamNummer,NamensdienstNode,KoordinatorNode) ->
+	Name = string:concat(string:concat(integer_to_list(PraktikumsGruppenNr), integer_to_list(TeamNummer)),
+    string:concat(integer_to_list(IdOfGGT), integer_to_list(StarterNummer))),
+  NameAtom = list_to_atom(Name),
+  Log = logger:start(Name),
+	{LeftN,RightN} = registerSelf(NamensdienstNode,KoordinatorNode,NameAtom,Log),
+	setPM(NameAtom,ArbeitsZeit,Log,LeftN,RightN,TermZeit,KoordinatorNode),
+	unregisterSelf(NamensdienstNode,NameAtom,Log).
 
 
 %%
 %% Local Functions
 %%
-connections(NamensdienstNode,KoordinatorName,Name) -> %NeedHelpHere!!!
-	Namensdienst = global:whereis_name(nameservice),
-	Koordinator = global:whereis_name(),
-	Log = logger:start(Name),
-	{Namensdienst,Koordinator,Log}.
-
 registerSelf(Namensdienst,Koordinator,Name,_Log) -> %logBinding
 	register(Name,self()),
 	Namensdienst ! {self(),{rebind,Name,node()}},
 	Koordinator ! {hello,Name},
 	receive
-    	{setneighbors,LeftN,RightN} ->
+  	{setneighbors,LeftN,RightN} ->
 			{LeftN,RightN}
 	end.
 

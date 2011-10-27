@@ -16,9 +16,9 @@
 %% API Functions
 %%
 start(StarterNummer) ->
-	{ArbeitsZeit,TermZeit,GGTProzesseProStarter} = configFromCoordinator(),
-	{NamensdienstNode,KoordinatorName,PraktikumsGruppenNr,TeamNummer} = connections(),
-	startGGTProcess(ArbeitsZeit,TermZeit,1,StarterNummer,PraktikumsGruppenNr,TeamNummer,NamensdienstNode,KoordinatorName,GGTProzesseProStarter).
+	{NamensdienstNode,KoordinatorNode,PraktikumsGruppenNr,TeamNummer} = connections(),
+	{ArbeitsZeit,TermZeit,GGTProzesseProStarter} = configFromCoordinator(KoordinatorNode),
+	startGGTProcess(ArbeitsZeit,TermZeit,1,StarterNummer,PraktikumsGruppenNr,TeamNummer,NamensdienstNode,KoordinatorNode,GGTProzesseProStarter).
 
 
 %%
@@ -26,18 +26,30 @@ start(StarterNummer) ->
 %%
 connections() ->
 	Config = config:read('ggt.cfg'),
-	NamensdienstNode = config:get(nameservicenode, Config),
-	KoordinatorName = config:get(koordinatorname, Config),
+  net_adm:ping(config:get(nameservicenode, Config)),
+  timer:sleep(300),
+  NamensdienstNode = global:whereis_name(nameservice),
+  KoordinatorNode = getNode(config:get(koordinatorname, Config), NamensdienstNode),
 	PraktikumsGruppenNr = config:get(praktikumsgruppe, Config),
 	TeamNummer = config:get(teamnummer, Config),
-	{NamensdienstNode,KoordinatorName,PraktikumsGruppenNr,TeamNummer}.
+	{NamensdienstNode,KoordinatorNode,PraktikumsGruppenNr,TeamNummer}.
 
-configFromCoordinator() ->
+getNode(Name, NamensdienstNode) ->
+  NamensdienstNode ! {self(), {lookup, Name}},
+  receive
+    not_found ->
+      io:format("Node ~s not found.~n", [Name]),
+      nil;
+    {Name,Node} -> {Name, Node}
+  end.
+ 
+configFromCoordinator(KoordinatorNode) ->
+  KoordinatorNode ! {getsteeringval, self()},
 	receive
-    	{steeringval,ArbeitsZeit,TermZeit,GGTProzesseProStarter} ->
+    {steeringval,ArbeitsZeit,TermZeit,GGTProzesseProStarter} ->
 			{ArbeitsZeit,TermZeit,GGTProzesseProStarter};
 		_ ->
-			configFromCoordinator()
+			configFromCoordinator(KoordinatorNode)
 	end.
 
 startGGTProcess(ArbeitsZeit,TermZeit,IdOfGGT,StarterNummer,PraktikumsGruppenNr,TeamNummer,NamensdienstNode,KoordinatorName,IdOfGGT) ->

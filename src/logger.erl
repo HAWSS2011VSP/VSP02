@@ -8,8 +8,8 @@ create(File) ->
   register(logger, spawn_link(Run)).
 
 start(Name) ->
-  File = string:concat('GGTP_',string:concat(Name, '.log')),
-  RegName = string:concat('GGTP_', Name),
+  File = string:concat("GGTP_",string:concat(Name, ".log")),
+  RegName = list_to_atom(string:concat("GGTP_", Name)),
   {ok, Handle} = file:open(File, [append]),
   Run = fun() -> run(Handle) end,
   register(RegName, spawn_link(Run)),
