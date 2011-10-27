@@ -5,16 +5,17 @@ start() ->
   erlang:nodes(visible),
   process_flag(trap_exit, true),
   Config = config:read('koordinator.cfg'),
-  register(config:get('koordinatorname', Config), self()),
+  KoordinatorName = config:get('koordinatorname', Config),
+  register(KoordinatorName, self()),
   net_adm:ping(config:get('nameservicenode', Config)),
-  Nameservice = global:whereis_name('nameservice'),
-  register('nameservice', Nameservice),
+  timer:sleep(200),
+  bindProc(KoordinatorName),
   io:format("Coordinator running...~n", []),
   preInitial(Config).
 
 preInitial(Config) ->
   receive
-    {PID, getsteeringval} ->
+    {getsteeringval, PID} ->
       io:format("Sending steering vals.~n", []),
       PID ! {steeringval,
              config:get('arbeitszeit', Config),
@@ -93,10 +94,18 @@ killProcs(Procs) ->
   lists:foreach(F, Procs).
 
 getProc(Name) ->
-  nameservice ! {self(), {lookup, Name}},
+  Nameservice = global:whereis_name('nameservice'),
+  Nameservice ! {self(), {lookup, Name}},
   receive
     not_found -> nil;
-    {Name,Node} -> Node
+    {Name,Node} -> {Name, Node}
+  end.
+
+bindProc(Name) ->
+  Nameservice = global:whereis_name('nameservice'),
+  Nameservice ! {self(),{rebind,Name,node()}},
+  receive ok -> io:format("..bind.done.\n");
+    in_use -> io:format("..schon gebunden.\n")
   end.
 
 rand(Lo,Hi) ->
