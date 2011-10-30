@@ -20,7 +20,7 @@ preInitial(Config) ->
       io:format("Sending steering vals.~n", []),
       PID ! {steeringval,
              config:get('arbeitszeit', Config),
-             config:get('termzeit', Config),
+             config:get('termzeit', Config) * 1000,
              config:get('ggtprozessnummer', Config)},
       preInitial(Config);
     setinitial ->
