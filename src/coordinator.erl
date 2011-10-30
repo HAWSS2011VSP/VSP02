@@ -1,5 +1,6 @@
 -module(coordinator).
 -export([start/0]).
+-compile(debug_info).
 
 start() ->
   erlang:nodes(visible),
@@ -52,16 +53,17 @@ buildRing([], _Recent, _Procs2) ->
 buildRing([Proc, Right | []], Recent, Procs2) ->
   Left = lists:last(Procs2),
   io:format("Setting Neighbours for ~w, Left: ~w, Right: ~w~n", [Proc, Left, Right]),
-  Proc ! {setneighbors, Recent, Right},
-  Right ! {setneighbors, Proc, Left},
+  io:format("Setting Neighbours for ~w, Left: ~w, Right: ~w~n", [Right, Proc, Left]),
+  getProc(Proc) ! {setneighbors, Recent, Right},
+  getProc(Right) ! {setneighbors, Proc, Left},
   buildRing([], Proc, [ Right, Proc | Procs2]);
 buildRing([Proc, Right | Rest], Recent, []) ->
   io:format("Setting Neighbours for ~w, Left: ~w, Right: ~w~n", [Proc, Recent, Right]),
-  Proc ! {setneighbours, Recent, Right},
+  getProc(Proc) ! {setneighbors, Recent, Right},
   buildRing([Right | Rest], Proc, [Proc]);
 buildRing([Proc, Right | Rest], Recent, Procs2) ->
   io:format("Setting Neighbours for ~w, Left: ~w, Right: ~w~n", [Proc, Recent, Right]),
-  Proc ! {setneighbours, Recent, Right},
+  getProc(Proc) ! {setneighbors, Recent, Right},
   buildRing([Right | Rest], Proc, [Proc | Procs2]);
 buildRing(Procs, Recent, Procs2) ->
   io:format("Something shitty... ~w ~w ~w~n", [Procs, Recent, Procs2]).
@@ -69,7 +71,7 @@ buildRing(Procs, Recent, Procs2) ->
 setStartValues([], _Ggt) ->
   done;
 setStartValues([PID | Rest], Ggt) ->
-  PID ! {setinitial, {Ggt * rand(1,100) * rand(1,100)}},
+  getProc(PID) ! {setpm, Ggt * rand(1,100) * rand(1,100)},
   setStartValues(Rest, Ggt).
 
 waitForResult(Config, Procs, Ggt) ->
@@ -103,6 +105,7 @@ getProc(Name) ->
 
 bindProc(Name) ->
   Nameservice = global:whereis_name('nameservice'),
+  io:format("Nameservice: ~w~n", [Nameservice]),
   Nameservice ! {self(),{rebind,Name,node()}},
   receive ok -> io:format("..bind.done.\n");
     in_use -> io:format("..schon gebunden.\n")

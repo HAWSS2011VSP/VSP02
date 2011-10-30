@@ -28,36 +28,45 @@ start(ArbeitsZeit,TermZeit,IdOfGGT,StarterNummer,PraktikumsGruppenNr,TeamNummer,
 %%
 %% Local Functions
 %%
-registerSelf(Namensdienst,Koordinator,Name,_Log) -> %logBinding
+registerSelf(Namensdienst,Koordinator,Name,Log) -> %logBinding
 	register(Name,self()),
 	Namensdienst ! {self(),{rebind,Name,node()}},
 	Koordinator ! {hello,Name},
+  Log ! {debug, "Registered and waiting for neighbours."},
 	receive
   	{setneighbors,LeftN,RightN} ->
+      Log ! {debug, "Got neighbours."},
 			{LeftN,RightN}
 	end.
 
 setPM(Name,ArbeitsZeit,Log,LeftN,RightN,TermZeit,Koordinator) ->
+  Log ! {debug, "Waiting for value."},
 	receive
 		{setpm,MiNeu} ->
-			afterSetPM(Name,ArbeitsZeit,Log,LeftN,RightN,TermZeit,MiNeu,Koordinator);
+			afterSetPM(Name,ArbeitsZeit,Log,LeftN,RightN,TermZeit,MiNeu,Koordinator),
+      Log ! {debug, "Got value."};
 		kill ->
+      Log ! {debug, "Time to kill!"},
 			ok;
 		_ ->
 			setPM(Name,ArbeitsZeit,Log,LeftN,RightN,TermZeit,Koordinator)
 	end.
 
 afterSetPM(Name,ArbeitsZeit,Log,LeftN,RightN,TermZeit,MiNeu,Koordinator) ->
+  Log ! {debug, "Starting calculation..."},
 	receive
 		{sendy,Y} ->
+      Log ! {debug, lists:concat(["Got value: ", integer_to_list(Y)])},
 			calculate(ArbeitsZeit,Name,MiNeu,Koordinator,Y,LeftN,RightN),
 			ok;
 		{abstimmung,Initiator} ->
 			if
 				Initiator == self() ->
+          Log ! {debug, "Voting successful."},
 					Koordinator ! {briefterm,{Name,MiNeu,time()}},
 					ok;
 				true ->
+          Log ! {debug, "Got a voting request."},
 					waitBeforeAbstimmungGoOn(Name,ArbeitsZeit,Log,LeftN,RightN,TermZeit/2,MiNeu,Initiator,Koordinator),
 					afterSetPM(Name,ArbeitsZeit,Log,LeftN,RightN,TermZeit,MiNeu,Koordinator)
 			end;
