@@ -96,7 +96,7 @@ bereit_2(Name,ArbeitsZeit,Log,LeftN,RightN,TermZeit,Mi,Koordinator) ->
 				true ->
 					Log ! {debug, ">>> abstimmung weiterleiten"},
 					Log ! {debug, "Got a voting request."},
-					RightN ! {abstimmung,Initiator}
+					getProc(RightN) ! {abstimmung,Initiator}
 			end,
 			bereit_1(Name,ArbeitsZeit,Log,LeftN,RightN,TermZeit,Mi,Koordinator);
 		{tellmi,From} ->
@@ -110,7 +110,7 @@ bereit_2(Name,ArbeitsZeit,Log,LeftN,RightN,TermZeit,Mi,Koordinator) ->
 	after 
 		TermZeit ->
 			Log ! {debug, ">>> after"},
-			RightN ! {abstimmung,self()},
+			getProc(RightN) ! {abstimmung,self()},
 			warten_after_term(Name,ArbeitsZeit,Log,LeftN,RightN,TermZeit,Mi,Koordinator)
 	end.
 
@@ -138,7 +138,7 @@ warten_after_term(Name,ArbeitsZeit,Log,LeftN,RightN,TermZeit,Mi,Koordinator) ->
 					warten(Name,ArbeitsZeit,Log,LeftN,RightN,TermZeit,Koordinator);
 				true ->
 					Log ! {debug, "Got a voting request."},
-					RightN ! {abstimmung,Initiator},
+					getProc(RightN) ! {abstimmung,Initiator},
 					warten_after_term(Name,ArbeitsZeit,Log,LeftN,RightN,TermZeit,Mi,Koordinator)
 			end;
 		kill ->
@@ -151,8 +151,8 @@ calculate(ArbeitsZeit,Name,Mi,Koordinator,Y,LeftN,RightN) ->
 	if
 		Y<Mi ->
 			MiNeu = mod(Mi-1, Y)+1,
-			LeftN ! {sendy,MiNeu},
-			RightN ! {sendy,MiNeu},
+			getProc(LeftN) ! {sendy,MiNeu},
+			getProc(RightN) ! {sendy,MiNeu},
 			if
 				Mi == MiNeu ->
 					Mi;
@@ -166,6 +166,14 @@ calculate(ArbeitsZeit,Name,Mi,Koordinator,Y,LeftN,RightN) ->
 
 mod(X,Y) ->
 	X rem Y.
+
+getProc(Name) ->
+  Nameservice = global:whereis_name('nameservice'),
+  Nameservice ! {self(), {lookup, Name}},
+  receive
+    not_found -> nil;
+    {Name,Node} -> {Name, Node}
+  end.
 
 unregisterSelf(Namensdienst,Name,Log) ->
 	Log ! {debug, "Unregistering..."},
