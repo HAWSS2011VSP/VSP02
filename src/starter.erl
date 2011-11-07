@@ -53,9 +53,9 @@ configFromCoordinator(KoordinatorNode) ->
 	end.
 
 startGGTProcess(ArbeitsZeit,TermZeit,IdOfGGT,StarterNummer,PraktikumsGruppenNr,TeamNummer,NamensdienstNode,KoordinatorName,IdOfGGT) ->
-	spawn_link(ggt_process, start, [ArbeitsZeit,TermZeit,IdOfGGT,StarterNummer,PraktikumsGruppenNr,TeamNummer,NamensdienstNode,KoordinatorName]),
+	spawn_link(ggt_process, start, [ArbeitsZeit*1000,TermZeit*1000,IdOfGGT,StarterNummer,PraktikumsGruppenNr,TeamNummer,NamensdienstNode,KoordinatorName]),
 	ok;
 
 startGGTProcess(ArbeitsZeit,TermZeit,IdOfGGT,StarterNummer,PraktikumsGruppenNr,TeamNummer,NamensdienstNode,KoordinatorName,GGTProzesseProStarter) ->
-	spawn_link(ggt_process, start, [ArbeitsZeit,TermZeit,IdOfGGT,StarterNummer,PraktikumsGruppenNr,TeamNummer,NamensdienstNode,KoordinatorName]),
+	spawn_link(ggt_process, start, [ArbeitsZeit*1000,TermZeit*1000,IdOfGGT,StarterNummer,PraktikumsGruppenNr,TeamNummer,NamensdienstNode,KoordinatorName]),
 	startGGTProcess(ArbeitsZeit,TermZeit,IdOfGGT+1,StarterNummer,PraktikumsGruppenNr,TeamNummer,NamensdienstNode,KoordinatorName,GGTProzesseProStarter).
