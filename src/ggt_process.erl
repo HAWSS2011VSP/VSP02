@@ -31,6 +31,9 @@ start(ArbeitsZeit,TermZeit,IdOfGGT,StarterNummer,PraktikumsGruppenNr,TeamNummer,
 registerSelf(Namensdienst,Koordinator,Name,Log) -> %logBinding
 	register(Name,self()),
 	Namensdienst ! {self(),{rebind,Name,node()}},
+	receive 
+		ok -> ok
+	end,
 	Koordinator ! {hello,Name},
 	Log ! {debug, "Registered and waiting for neighbours."},
 	receive
@@ -91,7 +94,7 @@ bereit_2(Name,ArbeitsZeit,Log,LeftN,RightN,TermZeit,Mi,Koordinator) ->
 		{abstimmung,Initiator} ->
 			Log ! {debug, ">>> abstimmung"},
 			if
-				Initiator == self() ->
+				Initiator == Name ->
 					ok;
 				true ->
 					Log ! {debug, ">>> abstimmung weiterleiten"},
@@ -110,7 +113,7 @@ bereit_2(Name,ArbeitsZeit,Log,LeftN,RightN,TermZeit,Mi,Koordinator) ->
 	after 
 		TermZeit ->
 			Log ! {debug, ">>> after"},
-			getProc(RightN) ! {abstimmung,self()},
+			getProc(RightN) ! {abstimmung,Name},
 			warten_after_term(Name,ArbeitsZeit,Log,LeftN,RightN,TermZeit,Mi,Koordinator)
 	end.
 
@@ -132,7 +135,7 @@ warten_after_term(Name,ArbeitsZeit,Log,LeftN,RightN,TermZeit,Mi,Koordinator) ->
 			bereit_1(Name,ArbeitsZeit,Log,LeftN,RightN,TermZeit,Mi,Koordinator);
 		{abstimmung,Initiator} ->
 			if
-				Initiator == self() ->
+				Initiator == Name ->
 					Log ! {debug, "Voting successful."},
 					Koordinator ! {briefterm,{Name,Mi,time()}},
 					warten(Name,ArbeitsZeit,Log,LeftN,RightN,TermZeit,Koordinator);
